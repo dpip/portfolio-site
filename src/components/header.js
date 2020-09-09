@@ -1,9 +1,10 @@
 import React from "react"
 import "../assets/scss/button.scss"
+import { Link } from "gatsby"
 export default (props) =>
 
 <header>
   <div className={'inner'}>
-    <a className={'avatar'}>Avatar</a>
+    <Link className={'avatar'} to="/">Avatar</Link>
   </div>
 </header>

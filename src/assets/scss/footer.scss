@@ -11,6 +11,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    .avatar__small {
+      color: $white-soft;
+    }
   }
   .footer__bottom {
     width: 100%;

@@ -24,5 +24,6 @@ module.exports = {
       },
     },
       `gatsby-plugin-sass`,
+      `gatsby-plugin-transition-link`
   ]
 }
