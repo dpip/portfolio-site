@@ -6,5 +6,23 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `teal`,
+        showSpinner: false,
+      }
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["VarelaRound"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
+      `gatsby-plugin-sass`,
+  ]
 }

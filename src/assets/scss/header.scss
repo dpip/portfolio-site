@@ -1,0 +1,20 @@
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  // background-color: red;
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      .avatar {
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+}

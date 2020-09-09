@@ -1,0 +1,38 @@
+section {
+  width: 100%;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 80%;
+  max-width: 80%;
+  .row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &.row__card {
+      margin-top: 2rem;
+      justify-content: space-between;
+    }
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1%;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  // font-size: 1.75rem;
+  font-weight: 700;
+}
+
+p {
+  margin-top: 1rem;
+}
