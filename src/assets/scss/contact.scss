@@ -1,0 +1,89 @@
+@import 'vars';
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 1rem;
+  p {
+    margin-top: 1rem;
+    text-align: justify;
+    font-size: 1.7rem !important;
+  }
+  label {
+    color: #ffffff;
+    display: block;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+  }
+}
+.form__name-email {
+  width: 100%;
+  display: flex;
+  .name-email-item {
+    flex: 1;
+    input {
+      width: 80%;
+      max-width: 80%;
+    }
+  }
+}
+#email {
+    // width: 50% !important;
+    margin-top: 1rem !important;
+    font-family: Arial;
+}
+
+#name {
+    // width: 50% !important;
+    margin-top: 1rem !important;
+    font-family: Arial;
+}
+
+#message {
+    min-width: 100%;
+    min-height: 25rem;
+    margin-top: 1rem !important;
+}
+
+
+input[type="text"], input[type="password"], input[type="email"], input[type="name"], input[type="tel"], input[type="search"], input[type="url"], select {
+    height: 2.75em;
+}
+
+input[type=email], input[type="name"], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: rgba(212, 212, 255, 0.035);
+    border: none;
+    border-radius: 0;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+    color: #FFF;
+}
+input, textarea {
+    font-size: 17pt;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    line-height: 1.65;
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid $red;
+}
+
+textarea:focus {
+    outline: none !important;
+    border: 2px solid $red;
+}

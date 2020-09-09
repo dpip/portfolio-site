@@ -1,6 +1,6 @@
 @import 'vars';
 
-button {
+button, .btn {
   transition: .3s cubic-bezier(.5,0,.5,1);
   box-sizing: border-box;
     background-color: initial;
