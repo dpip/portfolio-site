@@ -11,7 +11,7 @@ export default function Home() {
   return <Layout>
           <section>
             <div className={'container'}>
-              <h1>Daniel Pipkin</h1>
+              <h1 className={'red'}>Daniel Pipkin</h1>
               <h2>Front-end Developer | Raleigh, NC</h2>
               <p>For though result and talent add are parish valley. Songs in oh other avoid it hours woman style. In myself family as if be agreed. Gay collected son him knowledge delivered put. Added would end ask sight and asked saw dried house. Property expenses yourself occasion endeavor two may judgment she. Me of soon rank be most head time tore. Colonel or passage to ability.</p>
               <p>No opinions answered oh felicity is resolved hastened. Produced it friendly my if opinions humoured. Enjoy is wrong folly no taken.</p>

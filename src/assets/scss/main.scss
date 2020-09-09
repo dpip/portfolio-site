@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+@import 'vars';
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -30,6 +32,13 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+	background: $background-dark;
+	color: $white-soft;
+	position: relative;
+	// z-index: 200;
 }
 ol, ul {
 	list-style: none;
@@ -45,4 +54,8 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+html {
+	 font-size: 62.5%;
 }
