@@ -13,10 +13,19 @@ header {
       width: 80%;
       .avatar {
         height: 8rem;
+        padding: 4rem 0rem 4rem 0rem;
         display: flex;
         justify-content: center;
         align-items: center;
         color: $white-soft;
+        img {
+          border-radius: 100%;
+          border: 2px solid $white-soft;
+          transition: .3s cubic-bezier(.5,0,.5,1);
+          &:hover {
+            border: 2px solid $red;
+          }
+        }
       }
     }
 }

@@ -2,7 +2,7 @@
 
 footer {
   width: 100%;
-  padding: 2rem 0rem 2rem 0rem;
+  padding: 2rem 0rem 6rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,15 @@ footer {
     align-items: center;
     .avatar__small {
       color: $white-soft;
+      margin-top: 4rem;
+      img {
+        border-radius: 100%;
+        border: 2px solid $white-soft;
+        transition: .3s cubic-bezier(.5,0,.5,1);
+        &:hover {
+          border: 2px solid $red;
+        }
+      }
     }
   }
   .footer__bottom {
@@ -27,5 +36,18 @@ footer {
         color: $red;
       }
     }
+  }
+}
+
+.credits {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px !important;
+  a {
+    font-size: 10px !important;
+    margin-top: 0px !important;
+    color: $white-soft;
   }
 }
