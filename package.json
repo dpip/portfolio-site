@@ -15,7 +15,9 @@
   },
   "dependencies": {
     "gatsby": "^2.24.50",
+    "gatsby-plugin-modal-routing": "^1.2.0",
     "gatsby-plugin-nprogress": "^2.3.10",
+    "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-transition-link": "^1.20.2",
     "gatsby-plugin-web-font-loader": "^1.0.4",

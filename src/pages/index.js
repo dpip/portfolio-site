@@ -8,7 +8,45 @@ import Layout from "../components/layout.js";
 import Button from "../components/button.js";
 import Card from "../components/card.js";
 
+const cardItems = [
+  {
+    source: 'https://centerlinebeta.net/9541/',
+    title: 'Aveva maturity assessment',
+    description: 'An Asset Performance Strategy Assessment using Gatsby, SASS, and Hubspot API.',
+    cta: 'View project'
+  },
+  {
+    source: 'https://centerlinebeta.net/7745/public/',
+    title: 'IBM i 30th Anniversary',
+    description: 'Dynamic Microsite celebrating 30 years of innovation using JQuery, HandleBars, IBMv19, and SASS.',
+    cta: 'View project'
+  },
+  {
+    source: 'https://centerlinebeta.net/7745/public/',
+    title: 'Ping Identity Assessment',
+    description: 'Cross-currency assessment identifying security threats using JQuery and SASS.',
+    cta: 'View project'
+  },
+  {
+    source:'https://centerlinebeta.net/7745/public/',
+    title:'The Green Chair Project',
+    description:'Custom Wordpress template created for a Raleigh based charity donating home furnishings to those in need.',
+    cta:'View project'
+  },
+  {
+    source: 'https://centerlinebeta.net/7745/public/',
+    title: 'IBM Security Anomoly Detection',
+    description: 'Interactive Game built for IBM Think using React, Node.js, Electron, react-motion, and react-canvas.',
+    cta: 'Download app'
+  },
+  {
+    source: 'https://centerlinebeta.net/7745/public/',
+    title: 'IBM Z Systems Server Interactive',
+    description: 'Interactive server catalog Built for IBM Gartner Symposium booths using React, Node.js, Electron, react-Reveal, and IBM Carbon, and Kaon 3D.',
+    cta: 'Download App'
 
+  }
+]
 
 export default function Home() {
   return <Layout>
@@ -21,9 +59,12 @@ export default function Home() {
               <AniLink className="btn btn-contact" paintDrip hex={'#e6e6e6'} to="/contact/">Contact me</AniLink>
               <h2>Projects</h2>
               <div className={'row row__card'}>
-                <Card source={''} title={'Project title'} description={'The description will end up right here.'} cta={'View project'}/>
-                <Card source={''} title={'Project title'} description={'The description will end up right here.'} cta={'View project'}/>
-                <Card source={''} title={'Project title'} description={'The description will end up right here.'} cta={'View project'}/>
+                <Card source={'https://centerlinebeta.net/9541/'} title={'Aveva maturity assessment'} description={'An Asset Performance Strategy Assessment using Gatsby, SASS, and Hubspot API.'} cta={'View project'}/>
+                <Card source={'https://centerlinebeta.net/7745/public/'} title={'IBM i 30th Anniversary'} description={'Dynamic Microsite celebrating 30 years of innovation using JQuery, HandleBars, IBMv19, and SASS.'} cta={'View project'}/>
+                <Card source={'https://centerlinebeta.net/7745/public/'} title={'Ping Identity Assessment'} description={'Cross-currency assessment identifying security threats using JQuery and SASS.'} cta={'View project'}/>
+                <Card source={'https://centerlinebeta.net/7745/public/'} title={'The Green Chair Project'} description={'Custom Wordpress template created for a Raleigh based charity donating home furnishings to those in need.'} cta={'View project'}/>
+                <Card source={'https://centerlinebeta.net/7745/public/'} title={'IBM Security Anomoly Detection'} description={'Interactive Game built for IBM Think using React, Node.js, Electron, react-motion, and react-canvas.'} cta={'Download app'}/>
+                <Card source={'https://centerlinebeta.net/7745/public/'} title={'IBM Z Systems Server Interactive'} description={'Interactive server catalog Built for IBM Gartner Symposium booths using React, Node.js, Electron, react-Reveal, and IBM Carbon, and Kaon 3D.'} cta={'Download App'}/>
               </div>
             </div>
           </section>
