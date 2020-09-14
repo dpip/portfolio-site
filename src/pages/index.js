@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import TransitionLink from "gatsby-plugin-transition-link"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
@@ -22,7 +22,7 @@ const cardItems = [
     cta: 'View project'
   },
   {
-    source: 'https://centerlinebeta.net/7745/public/',
+    source: 'https://centerlinebeta.net/9329/build/',
     title: 'Ping Identity Assessment',
     description: 'Cross-currency assessment identifying security threats using JQuery and SASS.',
     cta: 'View project'

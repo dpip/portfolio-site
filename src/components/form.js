@@ -1,7 +1,7 @@
 import React from "react"
 import "../assets/scss/contact.scss"
 import {navigate} from 'gatsby'; //import navigate from gatsby
-import ModalExamplePage from "../components/notification.js";
+import Modal from "../components/modal.js";
 
 
 
@@ -36,7 +36,7 @@ export default class Form extends React.Component {
         <br />
         <label>Message</label>
         <textarea id={'message'} type="text" name="message" placeholder="Hey Daniel..." cols="30" rows="10"/>
-        {status === "SUCCESS" ? <ModalExamplePage /> : <button>Submit</button>}
+        {status === "SUCCESS" ? <Modal /> : <button>Submit</button>}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </form>
     );

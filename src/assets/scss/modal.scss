@@ -1,0 +1,39 @@
+@import 'vars';
+
+#modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(40, 41, 49, 0.85);
+  .modal__content {
+    max-width: 600px;
+    min-width: 420px;
+    background-color: $background-dark;
+    padding: 3rem;
+    h1 {
+      color: $red;
+    }
+  }
+}
+
+
+.modal__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2rem;
+  .social-item {
+    padding: 1rem;
+    transition: .3s cubic-bezier(.5,0,.5,1);
+    &:hover {
+      color: $red;
+    }
+  }
+}
