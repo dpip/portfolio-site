@@ -12,7 +12,7 @@ module.exports = {
       options: {
         color: `teal`,
         showSpinner: false,
-      }
+      },
     },
     {
       resolve: "gatsby-plugin-web-font-loader",
@@ -23,8 +23,12 @@ module.exports = {
         },
       },
     },
-      `gatsby-plugin-sass`,
-      `gatsby-plugin-transition-link`,
-      `gatsby-plugin-modal-routing`
-  ]
+    {
+      resolve: `gatsby-plugin-material-ui`,
+    },
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-modal-routing`,
+    `gatsby-plugin-material-ui`,
+  ],
 }
