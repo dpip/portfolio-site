@@ -1,4 +1,4 @@
-@import 'vars';
+@import "vars";
 
 #modal {
   display: flex;
@@ -14,14 +14,13 @@
   .modal__content {
     max-width: 600px;
     min-width: 420px;
-    background-color: $background-dark;
+    background-color: $navy;
     padding: 3rem;
     h1 {
-      color: $red;
+      color: $green;
     }
   }
 }
-
 
 .modal__social {
   display: flex;
@@ -31,9 +30,9 @@
   padding-top: 2rem;
   .social-item {
     padding: 1rem;
-    transition: .3s cubic-bezier(.5,0,.5,1);
+    transition: 0.3s cubic-bezier(0.5, 0, 0.5, 1);
     &:hover {
-      color: $red;
+      color: $green;
     }
   }
 }

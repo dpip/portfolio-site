@@ -1,3 +1,61 @@
-$background-dark: #282931;
-$white-soft: #e6e6e6;
-$red: #fc3565;
+$navy: #0a192f;
+$navy-light: #172a45;
+$navy-lightest: #303c55;
+$slate: #8892b0;
+$slate-light: #a8b2d1;
+$slate-lightest: #ccd6f6;
+$white: #e6f1ff;
+$green: #64ffda;
+
+$fz-xxs: 12px;
+$fz-xs: 13px;
+$fz-sm: 14px;
+$fz-md: 16px;
+$fz-lg: 18px;
+$fz-xl: 20px;
+$fz-xxl: 22px;
+$fz-heading: 32px;
+
+$font-sans: "Fira Sans", "San Francisco", "SF Pro Text", -apple-system,
+  system-ui, sans-serif;
+$font-mono: "Fira Mono", "Roboto Mono", monospace;
+$font-code: "Fira Code", $font-sans, monospace;
+
+$nav-height: 100px;
+$nav-scroll-height: 70px;
+
+$easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+$transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+$hamburger-width: 30px;
+$ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+$ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+$ham-after: bottom 0.1s ease-in 0.25s,
+  transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$ham-after-active: bottom 0.1s ease-out,
+  transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+
+// Theme Breakpoints - max-width
+
+$mobileS: 330px;
+$mobileM: 400px;
+$mobileL: 480px;
+$tabletS: 600px;
+$tabletL: 768px;
+$desktopXS: 900px;
+$desktopS: 1080px;
+$desktopM: 1200px;
+$desktopL: 1400px;
+
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

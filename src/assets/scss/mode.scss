@@ -1,0 +1,29 @@
+@import "vars";
+
+// Ideas 💥 maybe an owl iocn for dark mode and something else for light mode
+
+.mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  position: relative;
+  z-index: 100;
+
+  &:hover {
+    opacity: 0.55;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: $navy;
+    opacity: 0.55;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    z-index: 100;
+  }
+}

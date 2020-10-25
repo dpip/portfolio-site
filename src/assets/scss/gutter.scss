@@ -1,0 +1,71 @@
+@import "vars";
+
+.gutter {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 10;
+  color: $slate;
+  @include flex-center();
+  flex-direction: column;
+  &.gutter-left {
+    right: auto;
+    left: 40px;
+    li {
+      cursor: pointer;
+      transition: $transition;
+      padding: 5px;
+    }
+    li:hover {
+      transform: translateY(-5px);
+      a {
+        color: $green;
+      }
+    }
+    a {
+      color: $slate;
+      height: 100%;
+      font-size: $fz-md;
+    }
+  }
+  &.gutter-right {
+    left: auto;
+    right: 40px;
+    .gutter--email {
+      margin: 20px auto;
+      padding: 10px;
+      font-size: $fz-xxs;
+      letter-spacing: 0.1em;
+      -webkit-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+      transition: $transition;
+      margin-top: 5px;
+      position: relative;
+      cursor: pointer;
+      @include flex-center();
+      .copied {
+        writing-mode: horizontal-tb;
+        position: absolute;
+        top: -60px;
+        color: $green;
+        font-size: $fz-xxs;
+        text-align: center !important;
+      }
+      &:hover {
+        transform: translateY(-10px);
+        a {
+          color: $green;
+        }
+      }
+      a {
+        color: $slate;
+        height: 100%;
+      }
+    }
+  }
+  .gutter--tail {
+    height: 90px;
+    background-color: $slate;
+    width: 1px;
+  }
+}

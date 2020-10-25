@@ -1,31 +1,38 @@
-@import 'vars';
+@import "vars";
 
 header {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  padding: 0px 50px;
   width: 100%;
-    .inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 80%;
-      .avatar {
-        height: 8rem;
-        padding: 4rem 0rem 4rem 0rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $white-soft;
-        img {
-          border-radius: 100%;
-          border: 2px solid $white-soft;
-          transition: .3s cubic-bezier(.5,0,.5,1);
-          &:hover {
-            border: 2px solid $red;
-          }
-        }
-      }
-    }
+  height: $nav-height;
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+  transition: $transition;
+  &.going-up {
+    height: $nav-scroll-height;
+    transform: translateY(0px);
+    background-color: rgba(10, 25, 47, 0.85);
+    box-shadow: 0 10px 30px -10px var(--navy-shadow);
+  }
+  @include flex-center();
+  width: 100%;
+  padding: 0px 50px;
+  @media (max-width: 1080px) {
+    padding: 0px 50px;
+  }
+  @media (max-width: 768px) {
+    padding: 0px 25px;
+  }
+  @media (max-width: 480px) {
+    padding: 0px 25px;
+  }
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 }

@@ -1,0 +1,44 @@
+@import "vars";
+
+.logo {
+  @include flex-center();
+  padding: 10px;
+  width: 42px;
+  height: 42px;
+  position: relative;
+  transition: $transition;
+  .logo--d {
+    @include flex-center();
+    .logo--d-l {
+      height: 16px;
+      width: 16px;
+      transform: translateX(18px) rotate(-134deg);
+      border-top: 3px solid $slate;
+      border-right: 3px solid $slate;
+      opacity: 0.8;
+      left: 0;
+    }
+    .logo--d-c {
+      height: 15px;
+      border-right: 3px solid $green;
+      position: relative;
+      transform: translateX(14px) translateY(-2px) rotate(25deg);
+      //   transform: translateX(14px) translateY(-2px) rotate(12deg);
+    }
+    .logo--d-r {
+      height: 22px;
+      width: 22px;
+      transform: rotate(45deg);
+      border-top: 3px solid $green;
+      border-right: 3px solid $green;
+      left: 0;
+    }
+  }
+  &:hover {
+    .logo--d-l {
+      border-top: 3px solid $green;
+      border-right: 3px solid $green;
+      opacity: 1;
+    }
+  }
+}

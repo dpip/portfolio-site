@@ -15,12 +15,16 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        custom: {
-          families: ["VarelaRound"],
-          urls: ["/fonts/fonts.css"],
-        },
+        fonts: [
+          `Fira Mono`,
+          `Fira Sans`,
+          `Fira Code`,
+          `Roboto Mono`,
+          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
       },
     },
     {
@@ -30,5 +34,6 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-modal-routing`,
     `gatsby-plugin-material-ui`,
+    `gatsby-plugin-fontawesome-css`,
   ],
 }

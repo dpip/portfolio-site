@@ -1,44 +1,44 @@
 [
   {
-    "source": "https://centerlinebeta.net/9541/",
+    "link": "https://centerlinebeta.net/9541/",
     "title": "Aveva maturity assessment",
     "description": "An Asset Performance Strategy Assessment using Gatsby, SASS, and Hubspot API.",
-    "cta": "View project"
+    "cta": "View project",
+    "source": ""
   },
   {
-    "source": "https://centerlinebeta.net/7745/public/",
+    "link": "https://centerlinebeta.net/7745/public/",
     "title": "IBM i 30th Anniversary",
     "description": "Dynamic Microsite celebrating 30 years of innovation using JQuery, HandleBars, IBMv19, and SASS.",
-    "cta": "View project"
+    "cta": "View project",
+    "source": "../assets/images/ibm30.png"
   },
   {
-    "source": "https://centerlinebeta.net/9730/dist",
+    "link": "https://centerlinebeta.net/9730/dist",
     "title": "IBM Sterling OM benefits calculator",
     "description": "Benefits calculator estimating how IBM Sterling Order Management can help your bottom line using Gatsby and Carbon Design components.",
-    "cta": "View calculator"
+    "cta": "View calculator",
+    "source": ""
   },
   {
-    "source": "https://centerlinebeta.net/9329/build/",
+    "link": "https://centerlinebeta.net/9329/build/",
     "title": "Ping Identity Assessment",
     "description": "Cross-currency assessment identifying security threats using JQuery and SASS.",
-    "cta": "View project"
+    "cta": "View project",
+    "source": ""
   },
   {
-    "source": "https://centerlinebeta.net/7745/public/",
+    "link": "https://centerlinebeta.net/7745/public/",
     "title": "The Green Chair Project",
     "description": "Custom Wordpress template created for a Raleigh based charity donating home furnishings to those in need.",
-    "cta": "View project"
+    "cta": "View project",
+    "source": ""
   },
   {
-    "source": "https://centerlinebeta.net/8672/public",
+    "link": "https://centerlinebeta.net/8672/public",
     "title": "IBM Sterling anomoly detection interactive",
     "description": "Interactive game for IBM Sterling Order Management using JQuery, SASS, and IBM V19 digital design standards.",
-    "cta": "View calculator"
-  },
-  {
-    "source": "https://centerlinebeta.net/7745/public/",
-    "title": "IBM Z Systems Server Interactive",
-    "description": "Interactive server catalog Built for IBM Gartner Symposium booths using React, Node.js, Electron, react-Reveal, and IBM Carbon, and Kaon 3D.",
-    "cta": "Download App"
+    "cta": "View calculator",
+    "source": ""
   }
 ]

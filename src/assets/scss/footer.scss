@@ -1,4 +1,4 @@
-@import 'vars';
+@import "vars";
 
 footer {
   width: 100%;
@@ -12,14 +12,14 @@ footer {
     justify-content: center;
     align-items: center;
     .avatar__small {
-      color: $white-soft;
+      color: $white;
       margin-top: 4rem;
       img {
         border-radius: 100%;
-        border: 2px solid $white-soft;
-        transition: .3s cubic-bezier(.5,0,.5,1);
+        border: 2px solid $white;
+        transition: 0.3s cubic-bezier(0.5, 0, 0.5, 1);
         &:hover {
-          border: 2px solid $red;
+          border: 2px solid $green;
         }
       }
     }
@@ -31,9 +31,9 @@ footer {
     align-items: center;
     .social-item {
       padding: 1rem;
-      transition: .3s cubic-bezier(.5,0,.5,1);
+      transition: 0.3s cubic-bezier(0.5, 0, 0.5, 1);
       &:hover {
-        color: $red;
+        color: $green;
       }
     }
   }
@@ -48,6 +48,6 @@ footer {
   a {
     font-size: 10px !important;
     margin-top: 0px !important;
-    color: $white-soft;
+    color: $white;
   }
 }
