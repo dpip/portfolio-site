@@ -30,6 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-material-ui`,
     },
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-modal-routing`,

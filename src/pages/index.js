@@ -3,14 +3,14 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import cardData from "../data/card.json"
 import introData from "../data/intro.json"
-import content from "../data/content.json"
+// import content from "../data/content.json"
 
 import "../assets/scss/main.scss"
 import Layout from "../components/layout.js"
 import Card from "../components/card.js"
 import Tools from "../components/tools.js"
 import About from "../components/about.js"
-import Built from "../components/built.js"
+// import Built from "../components/built.js"
 
 export default function Home() {
   return (

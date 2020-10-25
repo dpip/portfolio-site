@@ -41,6 +41,8 @@ main {
   padding: 150px 150px;
   display: flex;
   justify-content: center;
+  z-index: 5;
+  position: relative;
 
   @media (max-width: 1080px) {
     padding: 150px 100px;
