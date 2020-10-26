@@ -34,12 +34,17 @@ header {
 
 .nav-items {
   @include flex-center();
-  font-size: $fz-md;
+  font-size: $fz-sm;
   color: $white;
   li {
     padding: $fz-sm;
     transition: $transition;
+    text-transform: capitalize;
     cursor: pointer;
+    span {
+      // margin-right: 0.5rem;
+      font-family: $font-mono;
+    }
     &:hover {
       color: $green;
     }

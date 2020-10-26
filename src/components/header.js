@@ -4,6 +4,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Logo from "./logo.js"
 
 import scrollTo from "gatsby-plugin-smoothscroll"
+import Fade from "react-reveal/Fade"
 
 import useDocumentScrollThrottled from "./../utilities/useDocumentScrollThrottled"
 
@@ -35,21 +36,27 @@ const Header = props => {
     <header className={`header ${shadowStyle} ${hiddenStyle}`}>
       <div className={"inner"}>
         <AniLink className={"avatar"} paintDrip hex={"#e6e6e6"} to="/">
-          <Logo />
+          <Fade>
+            <Logo />
+          </Fade>
         </AniLink>
-        <ul className="nav-items">
-          {navItems.map((item, index) => {
-            return (
-              <li
-                id={`nav-${item}`}
-                key={index}
-                onClick={() => scrollTo(`#${item}`)}
-              >
-                {item}
-              </li>
-            )
-          })}
-        </ul>
+        <Fade top cascade>
+          <ul className="nav-items">
+            {navItems.map((item, index) => {
+              return (
+                <li
+                  id={`nav-${item}`}
+                  key={index}
+                  onClick={() => scrollTo(`#${item}`)}
+                >
+                  <span className={"green"}>{`0${index + 1}.`}</span>
+                  &nbsp;
+                  {item}
+                </li>
+              )
+            })}
+          </ul>
+        </Fade>
       </div>
     </header>
   )

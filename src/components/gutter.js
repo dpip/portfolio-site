@@ -28,47 +28,57 @@ const Gutter = props => {
   }
 
   return (
-    <div className={`gutter gutter-${props.side}`}>
-      {props.side === "left" ? (
-        <ul>
-          <li>
-            <a href={content.social.codepen} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faCodepen} />
+    <Fade delay={props.delay}>
+      <div className={`gutter gutter-${props.side}`}>
+        {props.side === "left" ? (
+          <ul>
+            <li>
+              <a href={content.social.codepen} target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={faCodepen} />
+              </a>
+            </li>
+            <li>
+              <a href={content.social.github} target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </li>
+            <li>
+              <a
+                href={content.social.linkedin}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+            </li>
+            <li>
+              <a
+                href={content.social.instagram}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+            </li>
+          </ul>
+        ) : (
+          <div className={"gutter--email"} onClick={e => copyEmail(e)}>
+            {email === true ? (
+              <Fade bottom duration={500} distance={"16px"}>
+                <div className={"copied"}>{content.notifications.email}</div>
+              </Fade>
+            ) : (
+              false
+            )}
+            <a href="" rel="noreferrer">
+              <FontAwesomeIcon icon={faCopy} />
+              &nbsp; &nbsp;dpip.nc@gmail.com
             </a>
-          </li>
-          <li>
-            <a href={content.social.github} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </li>
-          <li>
-            <a href={content.social.linkedin} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-          </li>
-          <li>
-            <a href={content.social.instagram} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-          </li>
-        </ul>
-      ) : (
-        <div className={"gutter--email"} onClick={e => copyEmail(e)}>
-          {email === true ? (
-            <Fade bottom duration={500} distance={"16px"}>
-              <div className={"copied"}>{content.notifications.email}</div>
-            </Fade>
-          ) : (
-            false
-          )}
-          <a href="" rel="noreferrer">
-            <FontAwesomeIcon icon={faCopy} />
-            &nbsp; &nbsp;dpip.nc@gmail.com
-          </a>
-        </div>
-      )}
-      <div className={"gutter--tail"} />
-    </div>
+          </div>
+        )}
+        <div className={"gutter--tail"} />
+      </div>
+    </Fade>
   )
 }
 

@@ -25,8 +25,8 @@ export default ({ children, props }) => (
     <Header toggle={toggleMode} {...props} />
     <main>{children}</main>
     <Background {...props} />
-    <Gutter side={"left"} />
-    <Gutter side={"right"} />
+    <Gutter side={"left"} delay={1250} />
+    <Gutter side={"right"} delay={1500} />
     <Footer {...props} />
   </>
 )
