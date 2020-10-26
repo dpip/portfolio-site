@@ -1,29 +1,61 @@
 import React from "react"
 import "../../assets/scss/work.scss"
 
-import Card from "../../components/card.js"
+import Fade from "react-reveal/Fade"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+
+import prodOne from "../../assets/images/sterling.png"
+import prodTwo from "../../assets/images/ping.png"
+import prodThree from "../../assets/images/anniversary.png"
+
+const projectSRC = [prodOne, prodTwo, prodThree]
 
 export default props => (
   <div className={"container"}>
-    <h2 id={"work"} className={"heading-section"} style={{ marginTop: "2rem" }}>
-      <span>{props.content.bodyTitle}</span>
-      <div className="rule"></div>
-    </h2>
-    <section className={"container work-wrapper"}>
-      <div className={"card--grid"}>
-        {props.content.cards.map((card, index) => (
-          <div className="card--wrapper" key={index}>
-            <Card
-              key={index}
-              source={card.source}
-              title={card.title}
-              description={card.description}
-              cta={card.cta}
-              link={card.link}
-            />
+    <Fade bottom cascade distance={"30px"} delay={250}>
+      <h2
+        id={"work"}
+        className={"heading-section"}
+        style={{ marginTop: "2rem" }}
+      >
+        <span>{props.content.bodyTitle}</span>
+        <div className="rule"></div>
+      </h2>
+      {props.content.projects.map((project, index) => (
+        <div className={`work--item item-${index}`} key={index}>
+          <a
+            href={project.link}
+            target={"_blank"}
+            rel={"noreferrer"}
+            className={"project-image"}
+            style={{ backgroundImage: `url(${projectSRC[index]})` }}
+          ></a>
+          <div className={"project-content"}>
+            <span className={"green"}>Featured Project</span>
+            <h4>{project.title}</h4>
+            <div className={"project-description"}>{project.description}</div>
+            <div className={"project-tech"}>
+              {project.tech.map((t, index) => {
+                return <p key={index}>{t}</p>
+              })}
+            </div>
+            <div className={"project-ctas"}>
+              {!project.github ? (
+                ""
+              ) : (
+                <a href={""} target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              )}
+              <a href={""} target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={faExternalLinkAlt} />
+              </a>
+            </div>
           </div>
-        ))}
-      </div>
-    </section>
+        </div>
+      ))}
+    </Fade>
   </div>
 )

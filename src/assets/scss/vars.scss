@@ -59,3 +59,9 @@ $desktopL: 1400px;
   justify-content: center;
   align-items: center;
 }
+
+@mixin img-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

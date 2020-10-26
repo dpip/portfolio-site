@@ -102,3 +102,11 @@ textarea:focus {
   outline: none !important;
   border: 2px solid $green;
 }
+
+.container--get-in-touch {
+  padding-top: 90px;
+  @include flex-center();
+  flex-direction: column;
+  max-width: 600px !important;
+  word-break: break-all;
+}

@@ -1,1 +1,65 @@
 @import "vars";
+
+.work--item {
+  width: 100%;
+  @include flex-center();
+  flex-direction: row;
+  margin: 90px 0px;
+  &.item-1 {
+    flex-direction: row-reverse;
+    .project-content {
+      align-items: flex-start;
+    }
+  }
+  .project-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 50%;
+    height: 300px;
+    span {
+      font-size: $fz-sm;
+      font-family: $font-mono;
+    }
+  }
+  h4 {
+    margin: 16px 0px 30px 0px;
+  }
+  .project-image {
+    width: 50%;
+    height: 300px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .project-description {
+    padding: 24px;
+    background-color: $navy-light;
+    border-radius: 3px;
+    color: $white;
+    font-size: $fz-md;
+    box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+    width: 80%;
+  }
+  .project-ctas {
+    margin-top: 1rem;
+    a {
+      padding: 1rem;
+      text-decoration: none;
+      color: $slate;
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+  .project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    p {
+      font-size: $fz-sm;
+      padding: 0.5rem;
+    }
+  }
+}

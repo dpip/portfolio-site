@@ -9,6 +9,7 @@ import Intro from "../components/sections/intro.js"
 import About from "../components/sections/about.js"
 import Work from "../components/sections/work.js"
 import Experimental from "../components/sections/experimental.js"
+import GetInTouch from "../components/sections/getInTouch.js"
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <About content={content.about} />
         <Work content={content.work} />
         <Experimental content={content.experiments} />
+        <GetInTouch />
       </section>
     </Layout>
   )
