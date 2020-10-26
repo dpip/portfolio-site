@@ -1,1 +1,8 @@
 @import "vars";
+
+.container--intro {
+  min-height: 100vh;
+  .hello {
+    padding-top: 150px;
+  }
+}

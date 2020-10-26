@@ -2,7 +2,7 @@ import React from "react"
 import "../../assets/scss/about.scss"
 import Avatar from "../../assets/images/dpip.jpeg"
 export default props => (
-  <>
+  <div className={"container"}>
     <h2
       id={"about"}
       className={"heading-section"}
@@ -32,5 +32,5 @@ export default props => (
         <div className={"shade"}></div>
       </div>
     </section>
-  </>
+  </div>
 )

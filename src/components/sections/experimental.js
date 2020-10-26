@@ -2,7 +2,7 @@ import React from "react"
 import "../../assets/scss/experimental.scss"
 
 export default props => (
-  <>
+  <div className={"container"}>
     <h2
       id={"experiments"}
       className={"heading-section"}
@@ -12,5 +12,5 @@ export default props => (
       <div className="rule"></div>
     </h2>
     <section className={"container experimental-wrapper"}></section>
-  </>
+  </div>
 )

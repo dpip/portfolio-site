@@ -4,7 +4,7 @@ import "../../assets/scss/work.scss"
 import Card from "../../components/card.js"
 
 export default props => (
-  <>
+  <div className={"container"}>
     <h2 id={"work"} className={"heading-section"} style={{ marginTop: "2rem" }}>
       <span>{props.content.bodyTitle}</span>
       <div className="rule"></div>
@@ -25,5 +25,5 @@ export default props => (
         ))}
       </div>
     </section>
-  </>
+  </div>
 )
