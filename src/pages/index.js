@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <Layout>
       <section>
-        ] <Intro content={content.intro} />
+        <Intro content={content.intro} />
         <About content={content.about} />
         <Work content={content.work} />
         <Experimental content={content.experiments} />
