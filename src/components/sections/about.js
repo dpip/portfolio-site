@@ -1,7 +1,6 @@
 import React from "react"
-import "../assets/scss/about.scss"
-import Avatar from "../assets/images/dpip.jpeg"
-import content from "../data/content.json"
+import "../../assets/scss/about.scss"
+import Avatar from "../../assets/images/dpip.jpeg"
 export default props => (
   <>
     <h2
@@ -9,16 +8,16 @@ export default props => (
       className={"heading-section"}
       style={{ marginTop: "2rem" }}
     >
-      <span>{content.about.bodyTitle}</span>
+      <span>{props.content.bodyTitle}</span>
       <div className="rule"></div>
     </h2>
     <section className={"container about-wrapper"}>
       <div className={"about-content"}>
-        {content.about.body.map((c, i) => (
+        {props.content.body.map((c, i) => (
           <p key={i}>{c}</p>
         ))}
         <ul className={"about-tech__wrap"}>
-          {content.about.tech.map((c, i) => (
+          {props.content.tech.map((c, i) => (
             <li key={i} className={"about-tech__item"}>
               <span>&rArr;</span>&nbsp;{c}
             </li>

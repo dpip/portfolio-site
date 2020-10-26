@@ -1,41 +1,25 @@
 import React from "react"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import cardData from "../data/card.json"
-import introData from "../data/intro.json"
-// import content from "../data/content.json"
+import content from "../data/content.json"
 
 import "../assets/scss/main.scss"
 import Layout from "../components/layout.js"
 import Card from "../components/card.js"
-import Tools from "../components/tools.js"
-import About from "../components/about.js"
-// import Built from "../components/built.js"
+import Intro from "../components/sections/intro.js"
+import About from "../components/sections/about.js"
+import Work from "../components/sections/work.js"
+import Experimental from "../components/sections/experimental.js"
 
 export default function Home() {
   return (
     <Layout>
       <section>
         <div className={"container"}>
-          <p className={"hello green"}>{introData.hello}</p>
-          <h2 className={"heading-lg"}>{introData.name}</h2>
-          <h2 className={"heading-lg slate"} style={{ margin: "6px 0 6px 0" }}>
-            {introData.profession}
-          </h2>
-          <Tools />
-          <p className={"supporting-content slate"}>{introData.main}</p>
-          {/* <p>{introData.supporting}</p> */}
-          <AniLink
-            className="btn btn-contact"
-            paintDrip
-            hex={"#e6e6e6"}
-            to="/contact/"
-          >
-            Get in touch
-          </AniLink>
-          {/* <h2>Projects</h2> */}
-          {/* <h2>Expirements</h2> */}
-          <About />
+          <Intro content={content.intro} />
+          <About content={content.about} />
+          <Work content={content.work} />
+          <Experimental content={content.experiments} />
           <h2 style={{ marginTop: "2rem" }}>Professional Work</h2>
           <div className={"card--grid"}>
             {cardData.map((card, index) => (
