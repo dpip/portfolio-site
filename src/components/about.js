@@ -4,8 +4,12 @@ import Avatar from "../assets/images/dpip.jpeg"
 import content from "../data/content.json"
 export default props => (
   <>
-    <h2 className={"heading-section"} style={{ marginTop: "2rem" }}>
-      <span>{content.about.title}</span>
+    <h2
+      id={"about"}
+      className={"heading-section"}
+      style={{ marginTop: "2rem" }}
+    >
+      <span>{content.about.bodyTitle}</span>
       <div className="rule"></div>
     </h2>
     <section className={"container about-wrapper"}>

@@ -32,22 +32,22 @@ const Gutter = props => {
       {props.side === "left" ? (
         <ul>
           <li>
-            <a href="" rel="noreferrer">
+            <a href={content.social.codepen} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faCodepen} />
             </a>
           </li>
           <li>
-            <a href="" rel="noreferrer">
+            <a href={content.social.github} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li>
-            <a href="" rel="noreferrer">
+            <a href={content.social.linkedin} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
           <li>
-            <a href="" rel="noreferrer">
+            <a href={content.social.instagram} target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </li>

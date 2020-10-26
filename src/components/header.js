@@ -3,6 +3,8 @@ import "../assets/scss/button.scss"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Logo from "./logo.js"
 
+import scrollTo from "gatsby-plugin-smoothscroll"
+
 import useDocumentScrollThrottled from "./../utilities/useDocumentScrollThrottled"
 
 const Header = props => {
@@ -27,6 +29,8 @@ const Header = props => {
   const shadowStyle = shouldShowShadow ? "shadow" : ""
   const hiddenStyle = shouldHideHeader ? "hidden" : ""
 
+  const navItems = ["about", "work", "experimental", "contact"]
+
   return (
     <header className={`header ${shadowStyle} ${hiddenStyle}`}>
       <div className={"inner"}>
@@ -34,10 +38,17 @@ const Header = props => {
           <Logo />
         </AniLink>
         <ul className="nav-items">
-          <li>About</li>
-          <li>Work</li>
-          <li>Experiments</li>
-          <li>Contact</li>
+          {navItems.map((item, index) => {
+            return (
+              <li
+                id={`nav-${item}`}
+                key={index}
+                onClick={() => scrollTo(`#${item}`)}
+              >
+                {item}
+              </li>
+            )
+          })}
         </ul>
       </div>
     </header>

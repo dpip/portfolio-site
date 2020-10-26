@@ -1,6 +1,7 @@
 {
   "about": {
-    "title": "About Me",
+    "navTitle": "About",
+    "bodyTitle": "About Me",
     "body": [
       "Hello! I'm Daniel, a software engineer based in Raleigh, NC",
       "I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.",
@@ -15,7 +16,25 @@
       "MongoDB"
     ]
   },
+  "work": {
+    "navTitle": "Builds",
+    "bodyTitle": "Some things I've built"
+  },
+  "experiments": {
+    "navTitle": "Experiments",
+    "bodyTitle": "Some experiments"
+  },
+  "contact": {
+    "navTitle": "Contact",
+    "bodyTitle": "Get in touch"
+  },
   "notifications": {
     "email": "Email Copied to clipboard!"
+  },
+  "social": {
+    "codepen":"https://codepen.io/dpip",
+    "github": "https://github.com/dpip",
+    "linkedin": "https://www.linkedin.com/in/daniel-pipkin",
+    "instagram": "https://www.instagram.com/dpipnc"
   }
 }
