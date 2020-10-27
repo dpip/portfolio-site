@@ -13,13 +13,9 @@ import prodThree from "../../assets/images/anniversary.png"
 const projectSRC = [prodOne, prodTwo, prodThree]
 
 export default props => (
-  <div className={"container container-work"}>
+  <div id={"work"} className={"container container-work"}>
     <Fade bottom cascade distance={"30px"} delay={250}>
-      <h2
-        id={"work"}
-        className={"heading-section"}
-        style={{ marginTop: "2rem" }}
-      >
+      <h2 className={"heading-section"} style={{ marginTop: "2rem" }}>
         <span>{props.content.bodyTitle}</span>
         <div className="rule"></div>
       </h2>
@@ -59,6 +55,7 @@ export default props => (
                 href={project.link}
                 target="_blank"
                 rel="noreferrer"
+                style={{ marginLeft: !project.github ? "1rem" : "0rem" }}
               >
                 <FontAwesomeIcon icon={faExternalLinkAlt} />
               </a>

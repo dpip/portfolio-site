@@ -42,5 +42,11 @@
       opacity: 1;
       transform: translateY(0px) rotate(-134deg);
     }
+    @media (max-width: 768px) {
+      .logo--d-l {
+        // removes hover for mobile devices
+        transform: translateX(18px) rotate(-134deg);
+      }
+    }
   }
 }

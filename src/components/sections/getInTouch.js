@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade"
 
 export default props => (
   <Fade bottom cascade distance={"20px"}>
-    <div className={"container container--get-in-touch"}>
+    <div id={"contact"} className={"container container--get-in-touch"}>
       <h1>Get in touch</h1>
       <p>
         I'm currently looking for new opportunities and my inbox is always open!

@@ -34,7 +34,7 @@
     @media (max-width: 768px) {
       width: 100%;
       flex-direction: column;
-      margin: 130px 0px 0px 0px;
+      margin: 130px 0px 40px 0px;
       //   margin-top: 175px;
     }
     .project-content {
@@ -131,17 +131,53 @@
     a {
       padding: 1rem;
       text-decoration: none;
-      color: $slate;
-      background-color: $green;
+      color: $green;
+      background-color: inherit;
       border-radius: $border-radius;
+      transition: $transition;
+      border: 1px solid $green;
       &.project-github {
-        margin-right: 1rem;
+        margin-right: 2rem;
       }
       &:hover {
-        color: $green;
+        color: $navy;
+        background-color: $green;
       }
     }
   }
+
+  .project-github {
+    position: relative;
+    margin-left: 1rem;
+    &::after {
+      content: "github";
+      position: absolute;
+      top: 0;
+      left: -1.25rem;
+      font-size: $fz-xxs;
+      letter-spacing: 0.1em;
+      -webkit-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+      height: 100%;
+      text-align: center;
+    }
+  }
+  .project-link {
+    position: relative;
+    &::after {
+      content: "visit";
+      position: absolute;
+      top: 0;
+      left: -1.25rem;
+      font-size: $fz-xxs;
+      letter-spacing: 0.1em;
+      -webkit-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+      height: 100%;
+      text-align: center;
+    }
+  }
+
   .project-tech {
     display: flex;
     flex-wrap: wrap;

@@ -4,13 +4,9 @@ import Avatar from "../../assets/images/dpip.jpeg"
 import Fade from "react-reveal/Fade"
 
 export default props => (
-  <div className={"container container-about"}>
+  <div id={"about"} className={"container container-about"}>
     <Fade bottom distance={"30px"}>
-      <h2
-        id={"about"}
-        className={"heading-section"}
-        style={{ marginTop: "2rem" }}
-      >
+      <h2 className={"heading-section"} style={{ marginTop: "2rem" }}>
         <span>{props.content.bodyTitle}</span>
         <div className="rule"></div>
       </h2>
