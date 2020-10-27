@@ -26,13 +26,12 @@ export default props => (
       {props.content.projects.map((project, index) => (
         <div className={`work--item item-${index}`} key={index}>
           <h2 className={"green featured-mobile"}>Featured Project</h2>
-          <a
-            href={project.link}
-            target={"_blank"}
-            rel={"noreferrer"}
-            className={"project-image"}
-            style={{ backgroundImage: `url(${projectSRC[index]})` }}
-          ></a>
+          <div className={"project-image"}>
+            <a href={project.link} target={"_blank"} rel={"noreferrer"}>
+              <img src={projectSRC[index]} description={""} />
+            </a>
+          </div>
+
           <div className={"project-content"}>
             <span className={"green project-featured"}>Featured Project</span>
             <h4>{project.title}</h4>

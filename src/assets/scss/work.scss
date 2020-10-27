@@ -8,9 +8,21 @@
 
 .work--item {
   width: 100%;
-  @include flex-center();
+  display: flex;
+  justify-content: space-between;
   flex-direction: row;
   margin: 90px 0px;
+  &:hover,
+  &:focus {
+    a {
+      background: transparent;
+    }
+    &::after,
+    .img {
+      background: transparent;
+      filter: none;
+    }
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     margin: 0px 0px;
@@ -33,8 +45,9 @@
     justify-content: flex-start;
     align-items: flex-end;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     height: 300px;
+    color: $slate;
     @media (max-width: 768px) {
       width: 100%;
       margin-top: 30px;
@@ -51,11 +64,60 @@
     margin: 16px 0px 30px 0px;
   }
   .project-image {
-    width: 50%;
+    width: 40%;
     height: 300px;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
+    position: absolute;
+    a {
+      width: 100%;
+      height: 100%;
+      background-color: $green;
+      border-radius: $border-radius;
+      vertical-align: middle;
+      position: absolute;
+      top: 0;
+      left: 0;
+      &:hover,
+      &:focus {
+        background: transparent;
+        &:before,
+        .img {
+          background: transparent;
+          filter: none;
+        }
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 200;
+      transition: $transition;
+      background-color: $navy;
+      mix-blend-mode: screen;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: $border-radius;
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1) brightness(90%);
+      object-fit: cover;
+      object-position: center top;
+    }
+    // &::after {
+    //   content: "";
+    //   width: 100%;
+    //   height: 300px;
+    //   position: absolute;
+    //   background-color: $navy;
+    //   opacity: 0.75;
+    //   mix-blend-mode: screen;
+    // }
     @media (max-width: 768px) {
       width: 100%;
     }
@@ -64,10 +126,10 @@
     padding: 24px;
     background-color: $navy-light;
     border-radius: 3px;
-    color: $white;
+    color: $slate;
     font-size: $fz-md;
     box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
-    width: 80%;
+    width: 60%;
     @media (max-width: 768px) {
       width: 100%;
     }
@@ -87,6 +149,7 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 80%;
+    color: $slate;
     p {
       font-size: $fz-sm;
       padding: 0.5rem;
