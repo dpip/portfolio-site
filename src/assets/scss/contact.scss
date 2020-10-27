@@ -31,6 +31,17 @@ form {
       max-width: 80%;
     }
   }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .name-email-item {
+      flex: 1;
+      margin-bottom: 2rem;
+      input {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
 }
 #email {
   // width: 50% !important;
@@ -111,5 +122,34 @@ textarea:focus {
   word-break: break-all;
   @media (max-width: 768px) {
     align-items: flex-start;
+  }
+}
+
+.container--form {
+  button {
+    display: none;
+    border: none;
+    box-sizing: border-box;
+    background-color: initial;
+    border: 0;
+    border-radius: 0;
+    border: 1px solid $green;
+    color: $green;
+    cursor: pointer;
+    font-family: $font-mono;
+    font-size: $fz-sm;
+    width: fit-content;
+    letter-spacing: 0.25em;
+    line-height: 3.5em;
+    padding: 0 1.75em;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 2rem 0rem 2rem 0rem;
+    @include transition(0.3s cubic-bezier(0.5, 0, 0.5, 1));
+    @include flex-center();
+    &:hover {
+      background-color: $navy-light;
+    }
   }
 }
