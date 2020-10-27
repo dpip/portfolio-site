@@ -16,6 +16,11 @@ $fz-xl: 20px;
 $fz-xxl: 22px;
 $fz-heading: 32px;
 
+.small {
+  font-size: $fz-md;
+  line-height: 1rem;
+}
+
 $font-sans: "Fira Sans", "San Francisco", "SF Pro Text", -apple-system,
   system-ui, sans-serif;
 $font-mono: "Fira Mono", "Roboto Mono", monospace;

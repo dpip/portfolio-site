@@ -72,5 +72,17 @@
     "github": "https://github.com/dpip",
     "linkedin": "https://www.linkedin.com/in/daniel-pipkin",
     "instagram": "https://www.instagram.com/dpipnc"
+  },
+  "form": {
+    "success": {
+      "header": "Thanks for reaching out!",
+      "message": "I'll be sure to get back to you soon. If you'd like to see what else I'm up to in the meantime check out my social links below or feel free to return and check out what I've been working on.",
+      "to": "/"
+    },
+    "error": {
+      "header": "Ooops!",
+      "message": "There was an a problem submitting the form. Make sure all form entries are valid.",
+      "to": "/contact"
+    }
   }
 }

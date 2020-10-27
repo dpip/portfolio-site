@@ -16,10 +16,16 @@
     min-width: 420px;
     background-color: $navy;
     padding: 3rem;
+    border-radius: $border-radius;
+    border: 2px solid $green;
     h1 {
       color: $green;
     }
   }
+}
+
+.modal__content-message {
+  font-size: $fz-lg !important;
 }
 
 .modal__social {
@@ -27,12 +33,30 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 2rem;
   .social-item {
     padding: 1rem;
     transition: 0.3s cubic-bezier(0.5, 0, 0.5, 1);
     &:hover {
       color: $green;
     }
+  }
+  .rule-custom {
+    border: 1px solid $green;
+    height: 1px;
+    flex: 0;
+    animation-name: drawRule;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+    animation-duration: 0.6s;
+    animation-delay: 0.4s;
+  }
+}
+
+@keyframes drawRule {
+  0% {
+    flex: 0;
+  }
+  100% {
+    flex: 1;
   }
 }
