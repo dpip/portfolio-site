@@ -37,11 +37,30 @@
   display: flex;
   flex-direction: column;
   ul {
-    padding: 30px;
+    padding: 0px 30px;
+    li {
+      color: $navy;
+      padding: 1rem 0rem;
+      text-transform: capitalize;
+      span {
+        color: $slate;
+      }
+    }
   }
 }
 
 .nav-close {
   width: 100%;
-  background-color: red;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .nav-close--icon {
+    padding: 1rem;
+    background-color: $navy;
+    display: flex;
+    justify-content: center;
+    svg {
+      fill: $green;
+    }
+  }
 }

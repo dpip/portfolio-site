@@ -45,11 +45,21 @@ export default props => (
               {!project.github ? (
                 ""
               ) : (
-                <a href={project.github} target="_blank" rel="noreferrer">
+                <a
+                  className={"project-github"}
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               )}
-              <a href={project.link} target="_blank" rel="noreferrer">
+              <a
+                className={"project-link"}
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faExternalLinkAlt} />
               </a>
             </div>
