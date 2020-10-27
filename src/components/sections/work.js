@@ -13,7 +13,7 @@ import prodThree from "../../assets/images/anniversary.png"
 const projectSRC = [prodOne, prodTwo, prodThree]
 
 export default props => (
-  <div className={"container"}>
+  <div className={"container container-work"}>
     <Fade bottom cascade distance={"30px"} delay={250}>
       <h2
         id={"work"}
@@ -25,6 +25,7 @@ export default props => (
       </h2>
       {props.content.projects.map((project, index) => (
         <div className={`work--item item-${index}`} key={index}>
+          <h2 className={"green featured-mobile"}>Featured Project</h2>
           <a
             href={project.link}
             target={"_blank"}
@@ -33,7 +34,7 @@ export default props => (
             style={{ backgroundImage: `url(${projectSRC[index]})` }}
           ></a>
           <div className={"project-content"}>
-            <span className={"green"}>Featured Project</span>
+            <span className={"green project-featured"}>Featured Project</span>
             <h4>{project.title}</h4>
             <div className={"project-description"}>{project.description}</div>
             <div className={"project-tech"}>
@@ -45,11 +46,11 @@ export default props => (
               {!project.github ? (
                 ""
               ) : (
-                <a href={""} target="_blank" rel="noreferrer">
+                <a href={project.github} target="_blank" rel="noreferrer">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               )}
-              <a href={""} target="_blank" rel="noreferrer">
+              <a href={project.link} target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faExternalLinkAlt} />
               </a>
             </div>

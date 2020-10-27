@@ -4,10 +4,13 @@
   width: 40px;
   position: fixed;
   bottom: 0px;
-  z-index: 10;
+  z-index: 200 !important;
   color: $slate;
   @include flex-center();
   flex-direction: column;
+  @media (max-width: 768px) {
+    display: none;
+  }
   &.gutter-left {
     right: auto;
     left: 40px;

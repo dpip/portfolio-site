@@ -5,6 +5,7 @@ import Logo from "./logo.js"
 
 import scrollTo from "gatsby-plugin-smoothscroll"
 import Fade from "react-reveal/Fade"
+import MobileNav from "./mobileNav.js"
 
 import useDocumentScrollThrottled from "./../utilities/useDocumentScrollThrottled"
 
@@ -40,6 +41,8 @@ const Header = props => {
             <Logo />
           </Fade>
         </AniLink>
+        <MobileNav />
+
         <Fade top cascade>
           <ul className="nav-items">
             {navItems.map((item, index) => {

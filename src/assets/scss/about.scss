@@ -46,6 +46,9 @@
       transition: $transition;
     }
   }
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 }
 .about-tech__wrap {
   display: flex;

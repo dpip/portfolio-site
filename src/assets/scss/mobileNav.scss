@@ -1,0 +1,47 @@
+@import "vars";
+
+.mobile-nav--selector {
+  width: 25px;
+  height: 20px;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+  display: none;
+  .bar {
+    background-color: $green;
+    height: 2px;
+    border-radius: 3px;
+    &.bar-1 {
+      width: 100%;
+    }
+    &.bar-2 {
+      width: 75%;
+    }
+    &.bar-3 {
+      width: 50%;
+    }
+  }
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.mobile-nav--tray {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: fit-content;
+  height: 100vh;
+  min-width: calc(100vw - 100px);
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  ul {
+    padding: 30px;
+  }
+}
+
+.nav-close {
+  width: 100%;
+  background-color: red;
+}
