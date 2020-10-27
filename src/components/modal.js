@@ -17,6 +17,7 @@ const Modal = props => {
 
   const closeModal = e => {
     e.preventDefault()
+    modalOpen(false)
     props.resetModal()
     return
   }
@@ -30,16 +31,37 @@ const Modal = props => {
               <h1>{props.header}</h1>
               <p className={"modal__content-message"}>{props.message}</p>
               <div className={"modal__social"}>
-                <a className={"social-item"} style={{ paddingLeft: "0px" }}>
+                <a
+                  href={props.social.codepen}
+                  rel="noreferrer"
+                  target="_blank"
+                  className={"social-item"}
+                  style={{ paddingLeft: "0px" }}
+                >
                   <FontAwesomeIcon icon={faCodepen} />
                 </a>
-                <a className={"social-item"}>
+                <a
+                  href={props.social.github}
+                  rel="noreferrer"
+                  target="_blank"
+                  className={"social-item"}
+                >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
-                <a className={"social-item"}>
+                <a
+                  href={props.social.linkedin}
+                  rel="noreferrer"
+                  target="_blank"
+                  className={"social-item"}
+                >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
-                <a className={"social-item"}>
+                <a
+                  href={props.social.instagram}
+                  rel="noreferrer"
+                  target="_blank"
+                  className={"social-item"}
+                >
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
                 <div className={"rule-custom"} />
@@ -54,7 +76,12 @@ const Modal = props => {
                   {props.btnText}
                 </AniLink>
               ) : (
-                <div className={"btn green"} onClick={e => closeModal(e)}>
+                <div
+                  className={"btn green"}
+                  role="presentation"
+                  onClick={e => closeModal(e)}
+                  onKeyDown={e => closeModal(e)}
+                >
                   {props.btnText}
                 </div>
               )}

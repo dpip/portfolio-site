@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import "../assets/scss/mobileNav.scss"
 
 import scrollTo from "gatsby-plugin-smoothscroll"
@@ -33,6 +33,10 @@ const Logo = props => {
         onClick={e => {
           openMenu(e)
         }}
+        onKeyDown={e => {
+          openMenu(e)
+        }}
+        role="presentation"
       >
         <Fade>
           <div className={"bar bar-1"}></div>
@@ -44,7 +48,12 @@ const Logo = props => {
         <Fade right duration={500}>
           <div className={"mobile-nav--tray"}>
             <div className={"nav-close"}>
-              <div className={"nav-close--icon"} onClick={e => closeMenu(e)}>
+              <div
+                className={"nav-close--icon"}
+                onClick={e => closeMenu(e)}
+                onKeyDown={e => closeMenu(e)}
+                role="presentation"
+              >
                 <svg
                   focusable="false"
                   preserveAspectRatio="xMidYMid meet"
@@ -66,6 +75,8 @@ const Logo = props => {
                     id={`mobile-nav-${item}`}
                     key={index}
                     onClick={e => handleNav(e, item)}
+                    onKeyDown={e => handleNav(e, item)}
+                    role="presentation"
                   >
                     <span>{`0${index + 1}.`}</span>
                     &nbsp;

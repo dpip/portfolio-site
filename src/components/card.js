@@ -4,7 +4,7 @@ import Button from "./button.js"
 
 export default props => (
   <div className={"card"}>
-    <img src={props.source} />
+    <img alt="project image" src={props.source} />
     <div className="card-content">
       <h3>{props.title}</h3>
       <p>{props.description}</p>

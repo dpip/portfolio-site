@@ -37,7 +37,7 @@ export default class Form extends React.Component {
           <br />
           <div className="form__name-email">
             <div className="name-email-item">
-              <label>Your Email</label>
+              <label htmlFor="email">Your Email</label>
               <input
                 id={"email"}
                 type="email"
@@ -46,7 +46,7 @@ export default class Form extends React.Component {
               />
             </div>
             <div className="name-email-item">
-              <label>Your Name</label>
+              <label htmlFor="name">Your Name</label>
               <input
                 id={"name"}
                 type="name"
@@ -56,7 +56,7 @@ export default class Form extends React.Component {
             </div>
           </div>
           <br />
-          <label>Message</label>
+          <label htmlFor="message">Message</label>
           <textarea
             id={"message"}
             type="text"
@@ -74,6 +74,7 @@ export default class Form extends React.Component {
               to={sm.to}
               open={this.state.open}
               resetModal={resetModal}
+              social={content.social}
             />
           ) : (
             <button>Submit</button>
@@ -87,6 +88,7 @@ export default class Form extends React.Component {
               to={em.to}
               open={this.state.open}
               resetModal={resetModal}
+              social={content.social}
             />
           )}
         </form>

@@ -62,7 +62,12 @@ const Gutter = props => {
             </li>
           </ul>
         ) : (
-          <div className={"gutter--email"} onClick={e => copyEmail(e)}>
+          <div
+            className={"gutter--email"}
+            role="presentation"
+            onClick={e => copyEmail(e)}
+            onKeyDown={e => copyEmail(e)}
+          >
             {email === true ? (
               <Fade bottom duration={500} distance={"16px"}>
                 <div className={"copied"}>{content.notifications.email}</div>
@@ -70,10 +75,10 @@ const Gutter = props => {
             ) : (
               false
             )}
-            <a href="" rel="noreferrer">
+            <span>
               <FontAwesomeIcon icon={faCopy} />
               &nbsp; &nbsp;dpip.nc@gmail.com
-            </a>
+            </span>
           </div>
         )}
         <div className={"gutter--tail"} />

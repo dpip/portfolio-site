@@ -1,0 +1,10 @@
+@import "vars";
+
+.container--404 {
+  @include flex-center();
+  flex-direction: column;
+  .message-404 {
+    max-width: 400px;
+    text-align: center !important;
+  }
+}

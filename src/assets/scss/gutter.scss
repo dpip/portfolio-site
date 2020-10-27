@@ -56,11 +56,11 @@
       }
       &:hover {
         transform: translateY(-10px);
-        a {
+        span {
           color: $green;
         }
       }
-      a {
+      span {
         color: $slate;
         height: 100%;
       }

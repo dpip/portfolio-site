@@ -13,12 +13,20 @@ export default props => (
           hex={"#e6e6e6"}
           to="/"
         >
-          <img width={"35"} height={"35"} src={Avatar} />
+          <img
+            alt="avatar of author daniel pipkin"
+            width={"35"}
+            height={"35"}
+            src={Avatar}
+          />
         </AniLink>
       </div>
       <div className={"row footer__bottom"}>Built by Daniel Pipkin</div>
       <p className={"credits"}>
-        👾&nbsp; Using &nbsp;
+        <span role="img" aria-label="alien emoji">
+          👾
+        </span>
+        &nbsp; Using &nbsp;
         <a href={"https://www.gatsbyjs.com/"} target={"blank"} rel="noreferrer">
           Gatsby
         </a>
@@ -36,7 +44,10 @@ export default props => (
         >
           react-reveal
         </a>
-        &nbsp; 👾
+        &nbsp;
+        <span role="img" aria-label="alien emoji">
+          👾
+        </span>
       </p>
     </div>
   </footer>

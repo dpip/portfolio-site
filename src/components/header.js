@@ -50,7 +50,9 @@ const Header = props => {
                 <li
                   id={`nav-${item}`}
                   key={index}
+                  role="presentation"
                   onClick={() => scrollTo(`#${item}`)}
+                  onKeyDown={() => scrollTo(`#${item}`)}
                 >
                   <span className={"green"}>{`0${index + 1}.`}</span>
                   &nbsp;

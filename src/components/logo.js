@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import "../assets/scss/logo.scss"
 
 const Logo = props => {

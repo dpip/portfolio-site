@@ -24,7 +24,11 @@ export default props => (
           <h2 className={"green featured-mobile"}>Featured Project</h2>
           <div className={"project-image"}>
             <a href={project.link} target={"_blank"} rel={"noreferrer"}>
-              <img src={projectSRC[index]} description={""} />
+              <img
+                alt="screenshot of featured project"
+                src={projectSRC[index]}
+                description={""}
+              />
             </a>
           </div>
 
