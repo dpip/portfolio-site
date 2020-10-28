@@ -7,6 +7,7 @@
   align-items: flex-end;
   flex-direction: column;
   display: none;
+  cursor: pointer;
   .bar {
     background-color: $green;
     height: 2px;
@@ -42,6 +43,8 @@
       color: $navy;
       padding: 1rem 0rem;
       text-transform: capitalize;
+      border-bottom: 1px solid $navy;
+      cursor: pointer;
       span {
         color: $slate;
       }
@@ -56,11 +59,11 @@
   align-items: center;
   .nav-close--icon {
     padding: 1rem;
-    background-color: $navy;
     display: flex;
     justify-content: center;
+    cursor: pointer;
     svg {
-      fill: $green;
+      fill: $navy;
     }
   }
 }

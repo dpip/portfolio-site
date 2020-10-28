@@ -29,11 +29,15 @@ export default props => (
       </Fade>
       <Fade right distance={"30px"}>
         <div className={"about-image--container"}>
-          <div
-            className={"about-image--img"}
-            style={{ backgroundImage: `url(${Avatar})` }}
-          ></div>
-          <div className={"shade"}></div>
+          <div className={"about-image"}>
+            <a href={""} rel={"noreferrer"}>
+              <img
+                alt="screenshot of featured project"
+                src={Avatar}
+                description={"picture of daniel pipkin"}
+              />
+            </a>
+          </div>
         </div>
       </Fade>
     </section>
