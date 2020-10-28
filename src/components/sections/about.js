@@ -7,6 +7,7 @@ export default props => (
   <div id={"about"} className={"container container-about"}>
     <Fade bottom distance={"30px"}>
       <h2 className={"heading-section"} style={{ marginTop: "2rem" }}>
+        <span className={"heading-section--number"}>01.</span>
         <span>{props.content.bodyTitle}</span>
         <div className="rule"></div>
       </h2>

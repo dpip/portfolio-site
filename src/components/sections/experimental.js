@@ -25,6 +25,7 @@ const Experimental = props => {
     <div id={"experimental"} className={"container container--experimental"}>
       <Fade bottom distance={"24px"}>
         <h2 className={"heading-section"} style={{ marginTop: "2rem" }}>
+          <span className={"heading-section--number"}>03.</span>
           <span>{props.content.bodyTitle}</span>
           <div className="rule"></div>
         </h2>

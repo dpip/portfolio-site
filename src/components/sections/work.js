@@ -16,6 +16,7 @@ export default props => (
   <div id={"work"} className={"container container-work"}>
     <Fade bottom cascade distance={"30px"} delay={250}>
       <h2 className={"heading-section"} style={{ marginTop: "2rem" }}>
+        <span className={"heading-section--number"}>02.</span>
         <span>{props.content.bodyTitle}</span>
         <div className="rule"></div>
       </h2>

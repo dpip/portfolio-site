@@ -44,6 +44,13 @@ section {
 .hello {
   font-family: $font-code;
 }
+.heading-section--number {
+  color: $green;
+  font-size: $fz-xl;
+  font-family: $font-mono;
+  font-weight: 100;
+  padding-right: 6px;
+}
 
 .heading-section {
   display: flex;

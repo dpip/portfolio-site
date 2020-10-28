@@ -30,6 +30,9 @@
       height: 100%;
       font-size: $fz-md;
     }
+    @media (max-width: 1080px) {
+      left: 20px;
+    }
   }
   &.gutter-right {
     left: auto;
@@ -64,6 +67,9 @@
         color: $slate;
         height: 100%;
       }
+    }
+    @media (max-width: 1080px) {
+      right: 20px;
     }
   }
   .gutter--tail {

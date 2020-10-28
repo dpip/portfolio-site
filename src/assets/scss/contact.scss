@@ -116,9 +116,9 @@ textarea:focus {
 
 .container--get-in-touch {
   padding-top: 90px;
-  @include flex-center();
+  // @include flex-center();
   flex-direction: column;
-  max-width: 600px !important;
+  max-width: 400px !important;
   word-break: break-all;
   @media (max-width: 768px) {
     align-items: flex-start;

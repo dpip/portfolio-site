@@ -16,6 +16,7 @@ export default props => (
       <AniLink
         className="btn btn-contact"
         paintDrip
+        style={{ marginTop: "50px" }}
         hex={"#e6e6e6"}
         to="/contact/"
       >

@@ -2,6 +2,11 @@
 
 .container-about {
   max-width: 900px !important;
+  @media (max-width: 768px) {
+    .heading-section {
+      padding: 0px;
+    }
+  }
 }
 
 .about-wrapper {
