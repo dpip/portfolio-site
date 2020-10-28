@@ -25,17 +25,15 @@
   }
   @media (max-width: 768px) {
     flex-direction: column;
-    margin: 0px 0px;
+    margin: 175px 0px 0px 0px;
     position: relative;
-    // padding: 30px 0px 30px 0px;
   }
   &.item-1 {
     flex-direction: row-reverse;
     @media (max-width: 768px) {
       width: 100%;
       flex-direction: column;
-      margin: 130px 0px 40px 0px;
-      //   margin-top: 175px;
+      margin: 250px 0px 40px 0px;
     }
     .project-content {
       align-items: flex-start;
@@ -112,6 +110,8 @@
     }
     @media (max-width: 768px) {
       width: 100%;
+      height: 500px;
+      bottom: 0;
     }
   }
   .project-description {
@@ -183,12 +183,14 @@
     flex-wrap: wrap;
     max-width: 80%;
     color: $slate;
+
     p {
       font-size: $fz-sm;
       padding: 0.5rem;
+      background-color: $navy;
     }
     @media (max-width: 768px) {
-      max-width: 80%;
+      width: 100%;
       p {
         padding: 0rem 0rem;
         margin: 0.5rem 0.5rem 0.5rem 0rem;
@@ -211,5 +213,6 @@
   }
   .featured-mobile {
     display: block;
+    opacity: 0;
   }
 }

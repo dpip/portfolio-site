@@ -58,7 +58,62 @@
   },
   "experiments": {
     "navTitle": "Experimental",
-    "bodyTitle": "Experimental"
+    "bodyTitle": "Experimental",
+    "archiveLink": {
+      "text": "view archive", 
+      "link": ""
+    },
+    "featuredExp": [
+      {
+        "expTitle": "Turbine loader",
+        "expDescription": "Loading animation used for an IBM Think event interactive.",
+        "expURL": "https://codepen.io/dpip/pen/rJrQRR",
+        "expType": "codepen",
+        "expTech": ["HTML5,", "CSS3,", "SASS"]
+      },
+      {
+        "expTitle": "Fancy button border",
+        "expDescription": "Animation tracing the border of a button component.",
+        "expURL": "https://codepen.io/dpip/pen/WKLbjW",
+        "expType": "codepen",
+        "expTech": ["HTML5,", "CSS3,", "SASS"]
+      },
+      {
+        "expTitle": "Flex accent underline",
+        "expDescription": "Animation using flexbox to draw a line under text",
+        "expURL": "https://codepen.io/dpip/pen/VwwrLZj",
+        "expType": "codepen",
+        "expTech": ["HTML5,", "SASS,"]
+      },
+      {
+        "expTitle": "Page load concept",
+        "expDescription": "Looping keyframe animations for each letter of a string",
+        "expURL": "https://codepen.io/dpip/pen/VqdKKM",
+        "expType": "codepen",
+        "expTech": ["HTML5,", "CSS3,", "SASS"]
+      },
+      {
+        "expTitle": "Button hover concept",
+        "expDescription": "Seamless border-radius and content easing on hover",
+        "expURL": "https://codepen.io/dpip/pen/ZydVEz",
+        "expType": "codepen",
+        "expTech": ["HTML5,", "CSS3,", "SASS"]
+      },
+      {
+        "expTitle": "Flex Arrow CTA",
+        "expDescription": "On hover of a button an arrow reaches horizontally",
+        "expURL": "https://codepen.io/dpip/pen/KQQEYp",
+        "expType": "codepen",
+        "expTech": ["HTML5,", "CSS3,", "SASS"]
+      },
+      {
+        "expTitle": "Powerpoint-ish animation",
+        "expDescription": "Client requested animation based off of a powerpoint comp",
+        "expURL": "https://codepen.io/dpip/pen/gogNpO",
+        "expType": "codepen",
+        "expTech": ["HTML5,", "CSS3,", "SASS"]
+      }
+    ]
   },
   "contact": {
     "navTitle": "Contact",

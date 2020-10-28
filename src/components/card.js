@@ -1,14 +1,29 @@
 import React from "react"
 import "../assets/scss/card.scss"
-import Button from "./button.js"
 
-export default props => (
-  <div className={"card"}>
-    <img alt="project image" src={props.source} />
-    <div className="card-content">
-      <h3>{props.title}</h3>
-      <p>{props.description}</p>
-      <Button text={props.cta} link={props.link} />
-    </div>
-  </div>
-)
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+import { faLightbulb } from "@fortawesome/free-solid-svg-icons"
+import { faCodepen } from "@fortawesome/free-brands-svg-icons"
+
+const Card = props => {
+  console.log("slice from cards component", props.tech.slice(0, 3))
+  return (
+    <a href={props.url} className={"card"}>
+      <div className="card-content">
+        <div className={"card-icon-container"}>
+          <FontAwesomeIcon icon={faLightbulb} />
+          <FontAwesomeIcon icon={faCodepen} />
+        </div>
+        <h3>{props.title}</h3>
+        <p>{props.description}</p>
+      </div>
+      <ul>
+        {props.tech.map((item, index) => {
+          return <li key={index}>{item}</li>
+        })}
+      </ul>
+    </a>
+  )
+}
+export default Card
