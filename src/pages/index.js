@@ -10,18 +10,22 @@ import About from "../components/sections/about.js"
 import Work from "../components/sections/work.js"
 import Experimental from "../components/sections/experimental.js"
 import GetInTouch from "../components/sections/getInTouch.js"
+import LoadScreen from "../components/loadScreen.js"
 
 const Home = () => {
   return (
-    <Layout>
-      <section>
-        <Intro content={content.intro} />
-        <About content={content.about} />
-        <Work content={content.work} />
-        <Experimental content={content.experiments} />
-        <GetInTouch />
-      </section>
-    </Layout>
+    <>
+      <Layout>
+        <section>
+          <Intro content={content.intro} />
+          <About content={content.about} />
+          <Work content={content.work} />
+          <Experimental content={content.experiments} />
+          <GetInTouch />
+        </section>
+      </Layout>
+      <LoadScreen />
+    </>
   )
 }
 

@@ -3,6 +3,11 @@
 .container-about {
   max-width: 900px !important;
   @media (max-width: 768px) {
+    .about-content {
+      p {
+        padding-right: 25px;
+      }
+    }
     .heading-section {
       padding: 0px;
     }
@@ -47,6 +52,10 @@
 .about-image {
   width: 300px;
   height: 300px;
+  @media (max-width: 768px) {
+    width: 275px !important;
+    height: 275px !important;
+  }
   &:hover {
     a {
       background: transparent;

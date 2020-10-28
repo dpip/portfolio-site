@@ -5,7 +5,12 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  /* Site config here */
+  siteMetadata: {
+    title: `Daniel Pipkin`,
+    siteUrl: `https://www.dpip.dev`,
+    description: `Portfolio created by Daniel Pipkin to showcase front-end development`,
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-nprogress`,

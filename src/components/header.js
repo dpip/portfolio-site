@@ -42,7 +42,6 @@ const Header = props => {
           </Fade>
         </AniLink>
         <MobileNav />
-
         <Fade top cascade>
           <ul className="nav-items">
             {navItems.map((item, index) => {
