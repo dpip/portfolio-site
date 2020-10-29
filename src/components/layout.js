@@ -9,8 +9,7 @@ import Footer from "./footer.js"
 
 export default props => (
   <>
-    {console.log(props.type)}
-    <Header type={props.type} />
+    <Header type={props.type} nav={props.nav} />
     <main>{props.children}</main>
     <Background />
     <Gutter side={"left"} delay={1250} />

@@ -28,71 +28,69 @@ export default class Form extends React.Component {
     }
 
     return (
-      <Fade bottom cascade duration={500} distance={"24px"}>
-        <form
-          onSubmit={this.submitForm}
-          action="https://formspree.io/meqryvqd"
-          method="POST"
-        >
-          <br />
-          <div className="form__name-email">
-            <div className="name-email-item">
-              <label htmlFor="email">Your Email</label>
-              <input
-                id={"email"}
-                type="email"
-                name="email"
-                placeholder="Your email..."
-              />
-            </div>
-            <div className="name-email-item">
-              <label htmlFor="name">Your Name</label>
-              <input
-                id={"name"}
-                type="name"
-                name="name"
-                placeholder="Your name..."
-              />
-            </div>
+      <form
+        onSubmit={this.submitForm}
+        action="https://formspree.io/meqryvqd"
+        method="POST"
+      >
+        <br />
+        <div className="form__name-email">
+          <div className="name-email-item">
+            <label htmlFor="email">Your Email</label>
+            <input
+              id={"email"}
+              type="email"
+              name="email"
+              placeholder="Your email..."
+            />
           </div>
-          <br />
-          <label htmlFor="message">Message</label>
-          <textarea
-            id={"message"}
-            type="text"
-            name="message"
-            placeholder="Hey Pip..."
-            cols="30"
-            rows="10"
+          <div className="name-email-item">
+            <label htmlFor="name">Your Name</label>
+            <input
+              id={"name"}
+              type="name"
+              name="name"
+              placeholder="Your name..."
+            />
+          </div>
+        </div>
+        <br />
+        <label htmlFor="message">Message</label>
+        <textarea
+          id={"message"}
+          type="text"
+          name="message"
+          placeholder="Hey Pip..."
+          cols="30"
+          rows="10"
+        />
+        {status === "SUCCESS" ? (
+          <Modal
+            type={"success"}
+            header={sm.header}
+            message={sm.message}
+            btnText={"return"}
+            to={sm.to}
+            open={this.state.open}
+            resetModal={resetModal}
+            social={content.social}
           />
-          {status === "SUCCESS" ? (
-            <Modal
-              type={"success"}
-              header={sm.header}
-              message={sm.message}
-              btnText={"return"}
-              to={sm.to}
-              open={this.state.open}
-              resetModal={resetModal}
-              social={content.social}
-            />
-          ) : (
-            <button>Submit</button>
-          )}
-          {status === "ERROR" && (
-            <Modal
-              type={"error"}
-              header={em.header}
-              message={em.message}
-              btnText={"gotcha"}
-              to={em.to}
-              open={this.state.open}
-              resetModal={resetModal}
-              social={content.social}
-            />
-          )}
-        </form>
-      </Fade>
+        ) : (
+          <button>Submit</button>
+        )}
+        {status === "ERROR" && (
+          <Modal
+            type={"error"}
+            header={em.header}
+            message={em.message}
+            btnText={"gotcha"}
+            to={em.to}
+            open={this.state.open}
+            resetModal={resetModal}
+            social={content.social}
+          />
+        )}
+      </form>
     )
   }
 

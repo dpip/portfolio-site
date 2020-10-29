@@ -22,7 +22,7 @@ const Logo = props => {
   }
   const handleNav = (e, target) => {
     e.preventDefault()
-    scrollTo(`#${target}`)
+    // scrollTo(`#${target}`)
     setTimeout(() => {
       menuOpened(false)
     }, 250)
@@ -73,7 +73,14 @@ const Logo = props => {
             <ul>
               {navItems.map((item, index) => {
                 return (
-                  <AniLink key={index} to={"/"} state={{ section: item }}>
+                  <AniLink
+                    key={index}
+                    paintDrip
+                    hex={"#e6e6e6"}
+                    to="/"
+                    state={{ section: item }}
+                    onClick={e => handleNav(e, item)}
+                  >
                     {item}
                   </AniLink>
                 )
@@ -89,17 +96,3 @@ const Logo = props => {
 }
 
 export default Logo
-
-// {
-//   // <li
-//                   //   id={`mobile-nav-${item}`}
-//                   //   key={index}
-//                   //   onClick={e => handleNav(e, item)}
-//                   //   onKeyDown={e => handleNav(e, item)}
-//                   //   role="presentation"
-//                   // >
-//                   //   <span>{`0${index + 1}.`}</span>
-//                   //   &nbsp;
-//                   //   {item}
-//                   // </li>
-// }

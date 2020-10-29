@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import scrollTo from "gatsby-plugin-smoothscroll"
 
@@ -15,17 +15,22 @@ import GetInTouch from "../components/sections/getInTouch.js"
 import LoadScreen from "../components/loadScreen.js"
 
 const Home = props => {
+  const [nav, toggleNav] = useState(false)
+
   const toSection = () => {
-    const sectionProps = props.location.state.section
-    scrollTo(`#${sectionProps}`)
+    let sectionState = props.location.state
+    if (!sectionState) {
+      return
+    } else {
+      scrollTo(`#${sectionState.section}`)
+    }
   }
 
   toSection()
 
-  console.log("test state", props.location.state)
   return (
     <>
-      <Layout type={"index"} name={"home"}>
+      <Layout type={"index"} nav={nav}>
         <section>
           <Intro content={content.intro} />
           <About content={content.about} />
