@@ -33,6 +33,8 @@ const Header = props => {
 
   const navItems = ["about", "work", "experimental", "contact"]
 
+  console.log("props from header", props.type)
+
   return (
     <header className={`header ${shadowStyle} ${hiddenStyle}`}>
       <div className={"inner"}>
@@ -41,7 +43,7 @@ const Header = props => {
             <Logo />
           </Fade>
         </AniLink>
-        <MobileNav />
+        <MobileNav type={props.type} />
         <Fade top cascade>
           <ul className="nav-items">
             {navItems.map((item, index) => {

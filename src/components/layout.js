@@ -7,26 +7,14 @@ import Background from "./background.js"
 import Gutter from "./gutter.js"
 import Footer from "./footer.js"
 
-let mode = "dark"
-
-const toggleMode = e => {
-  e.preventDefault()
-  if (mode === "dark") {
-    mode = "light"
-    console.log(mode)
-  } else {
-    mode = "dark"
-    console.log(mode)
-  }
-}
-
-export default ({ children, props }) => (
+export default props => (
   <>
-    <Header toggle={toggleMode} {...props} />
-    <main>{children}</main>
-    <Background {...props} />
+    {console.log(props.type)}
+    <Header type={props.type} />
+    <main>{props.children}</main>
+    <Background />
     <Gutter side={"left"} delay={1250} />
     <Gutter side={"right"} delay={1500} />
-    <Footer {...props} />
+    <Footer />
   </>
 )

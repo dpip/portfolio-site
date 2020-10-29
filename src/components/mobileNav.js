@@ -5,6 +5,8 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 
 import Fade from "react-reveal/Fade"
 
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 const navItems = ["about", "work", "experimental", "contact"]
 
 const Logo = props => {
@@ -71,17 +73,9 @@ const Logo = props => {
             <ul>
               {navItems.map((item, index) => {
                 return (
-                  <li
-                    id={`mobile-nav-${item}`}
-                    key={index}
-                    onClick={e => handleNav(e, item)}
-                    onKeyDown={e => handleNav(e, item)}
-                    role="presentation"
-                  >
-                    <span>{`0${index + 1}.`}</span>
-                    &nbsp;
+                  <AniLink key={index} to={"/"} state={{ section: item }}>
                     {item}
-                  </li>
+                  </AniLink>
                 )
               })}
             </ul>
@@ -95,3 +89,17 @@ const Logo = props => {
 }
 
 export default Logo
+
+// {
+//   // <li
+//                   //   id={`mobile-nav-${item}`}
+//                   //   key={index}
+//                   //   onClick={e => handleNav(e, item)}
+//                   //   onKeyDown={e => handleNav(e, item)}
+//                   //   role="presentation"
+//                   // >
+//                   //   <span>{`0${index + 1}.`}</span>
+//                   //   &nbsp;
+//                   //   {item}
+//                   // </li>
+// }

@@ -5,7 +5,7 @@ import Layout from "../components/layout.js"
 import Form from "../components/form.js"
 
 export default props => (
-  <Layout>
+  <Layout type={"contact"}>
     <section>
       <div className={"container container--form"}>
         <h1 className={"hello green"}>Let's connect!</h1>
