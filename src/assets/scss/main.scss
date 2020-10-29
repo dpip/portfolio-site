@@ -91,5 +91,11 @@ ul {
 
 a,
 button {
-  cursor: pointer;
+  @media (max-width: 768px) {
+    cursor: pointer;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
 }
