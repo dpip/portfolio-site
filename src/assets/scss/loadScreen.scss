@@ -10,7 +10,7 @@
   z-index: 100;
   background-color: $navy;
   animation-name: fadeOut;
-  animation-duration: 3.6s;
+  animation-duration: 3.2s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
   .logo {
@@ -61,8 +61,11 @@
     z-index: 100;
     opacity: 1;
   }
-  99% {
+  85% {
     z-index: 100;
+  }
+  90% {
+    opacity: 0;
   }
   100% {
     z-index: -1;

@@ -1,9 +1,10 @@
 import React from "react"
+
+import scrollTo from "gatsby-plugin-smoothscroll"
+
 import "../assets/scss/contact.scss"
 import Modal from "../components/modal.js"
 import content from "../data/content.json"
-
-import Fade from "react-reveal/Fade"
 
 export default class Form extends React.Component {
   constructor(props) {
