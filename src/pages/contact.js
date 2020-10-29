@@ -8,8 +8,8 @@ export default props => (
   <Layout>
     <section>
       <div className={"container container--form"}>
-        <h1 className={"hello green"}>Let's get in touch!</h1>
-        <Form />
+        <h1 className={"hello green"}>Let's connect!</h1>
+        <Form {...props} />
       </div>
     </section>
   </Layout>

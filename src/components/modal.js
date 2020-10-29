@@ -19,7 +19,7 @@ const Modal = props => {
     e.preventDefault()
     modalOpen(false)
     props.resetModal()
-    return
+    // return
   }
 
   return (

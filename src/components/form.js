@@ -70,7 +70,7 @@ export default class Form extends React.Component {
               type={"success"}
               header={sm.header}
               message={sm.message}
-              btnText={"back home"}
+              btnText={"return"}
               to={sm.to}
               open={this.state.open}
               resetModal={resetModal}
