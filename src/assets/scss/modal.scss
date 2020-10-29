@@ -21,15 +21,21 @@
     border-radius: $border-radius;
     border: 2px solid $green;
     z-index: 150;
-
+    margin: 50px 20px 0px 20px;
+    @media (max-width: 780px) {
+      padding: 1.5rem 1rem;
+      .modal__content-message {
+        font-size: $fz-sm !important;
+      }
+      .btn {
+        margin-top: 8px;
+        margin-bottom: 0px;
+      }
+    }
     h1 {
       color: $green;
     }
   }
-}
-
-.modal__content-message {
-  font-size: $fz-lg !important;
 }
 
 .modal__social {
@@ -38,6 +44,7 @@
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
+
   .social-item {
     padding: 1rem;
     transition: 0.3s cubic-bezier(0.5, 0, 0.5, 1);
@@ -55,6 +62,9 @@
     animation-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
     animation-duration: 0.6s;
     animation-delay: 0.4s;
+    @media (max-width: 780px) {
+      display: none;
+    }
   }
 }
 
