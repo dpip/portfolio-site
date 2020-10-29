@@ -25,6 +25,9 @@ section {
   font-size: clamp(40px, 8vw, 80px);
   &::first-letter {
     margin-left: -0.3rem;
+    @media (max-width: 768px) {
+      margin-left: 0rem;
+    }
   }
 }
 .heading-med {
