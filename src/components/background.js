@@ -6,6 +6,7 @@ import Particles from "react-particles-js"
 export default props => (
   <>
     <Particles
+      style={{ position: "absolute" }}
       params={{
         particles: {
           number: {
@@ -20,7 +21,7 @@ export default props => (
           },
           move: {
             direction: "down",
-            speed: 0.75,
+            speed: 0,
           },
           color: "#64ffda",
         },
