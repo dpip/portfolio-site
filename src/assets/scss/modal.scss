@@ -13,6 +13,8 @@
   width: 100vw;
   background-color: rgba(40, 41, 49, 0.85);
   overflow: hidden;
+  overflow-y: hidden; // hide vertical
+  overflow-x: hidden; // hide horizontal
   .modal__content {
     max-width: 600px;
     margin: 0px 32px;
@@ -23,10 +25,14 @@
     // z-index: 150;
     margin: 50px 20px 0px 20px;
     position: relative;
+    overflow-y: hidden; // hide vertical
+    overflow-x: hidden; // hide horizontal
     @media (max-width: 780px) {
       padding: 1.5rem 1rem;
       .modal__content-message {
         font-size: $fz-sm !important;
+        overflow-y: hidden; // hide vertical
+        overflow-x: hidden; // hide horizontal
       }
       .btn {
         margin-top: 8px;
