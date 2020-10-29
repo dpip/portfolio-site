@@ -46,16 +46,17 @@ const Header = props => {
           <ul className="nav-items">
             {navItems.map((item, index) => {
               return (
-                <li
-                  id={`nav-${item}`}
-                  key={index}
-                  role="presentation"
-                  onClick={() => scrollTo(`#${item}`)}
-                  onKeyDown={() => scrollTo(`#${item}`)}
-                >
-                  <span className={"green"}>{`0${index + 1}.`}</span>
-                  &nbsp;
-                  {item}
+                <li key={index}>
+                  <AniLink
+                    paintDrip
+                    hex={"#e6e6e6"}
+                    to="/"
+                    state={{ section: item }}
+                    onClick={() => scrollTo(`#${item}`)}
+                  >
+                    <span className={"green"}>01.</span>
+                    {item}
+                  </AniLink>
                 </li>
               )
             })}

@@ -41,13 +41,20 @@
   ul {
     padding: 0px 30px;
     li {
-      color: $navy;
       padding: 1rem 0rem;
       text-transform: capitalize;
       border-bottom: 1px solid $navy;
       cursor: pointer;
       span {
         color: $slate;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $navy;
+      span {
+        color: $slate;
+        padding-right: 6px;
       }
     }
   }

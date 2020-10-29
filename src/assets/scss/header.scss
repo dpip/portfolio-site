@@ -43,11 +43,14 @@ header {
     text-transform: capitalize;
     cursor: pointer;
     span {
-      // margin-right: 0.5rem;
+      margin-right: 0.5rem;
       font-family: $font-mono;
     }
-    &:hover {
-      color: $green;
+    a {
+      color: $slate;
+      &:hover {
+        color: $green;
+      }
     }
   }
   @media (max-width: 768px) {

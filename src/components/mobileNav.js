@@ -9,7 +9,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const navItems = ["about", "work", "experimental", "contact"]
 
-const Logo = props => {
+const MobileNav = props => {
   const [menu, menuOpened] = useState(false)
 
   const openMenu = e => {
@@ -73,16 +73,18 @@ const Logo = props => {
             <ul>
               {navItems.map((item, index) => {
                 return (
-                  <AniLink
-                    key={index}
-                    paintDrip
-                    hex={"#e6e6e6"}
-                    to="/"
-                    state={{ section: item }}
-                    onClick={e => handleNav(e, item)}
-                  >
-                    {item}
-                  </AniLink>
+                  <li key={index}>
+                    <AniLink
+                      paintDrip
+                      hex={"#e6e6e6"}
+                      to="/"
+                      state={{ section: item }}
+                      onClick={e => handleNav(e, item)}
+                    >
+                      <span>01.</span>
+                      {item}
+                    </AniLink>
+                  </li>
                 )
               })}
             </ul>
@@ -95,4 +97,4 @@ const Logo = props => {
   )
 }
 
-export default Logo
+export default MobileNav
