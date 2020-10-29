@@ -7,7 +7,6 @@ import { faLightbulb } from "@fortawesome/free-solid-svg-icons"
 import { faCodepen } from "@fortawesome/free-brands-svg-icons"
 
 const Card = props => {
-  console.log("slice from cards component", props.tech.slice(0, 3))
   return (
     <a href={props.url} className={"card"}>
       <div className="card-content">

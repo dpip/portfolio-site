@@ -15,7 +15,6 @@ const Experimental = props => {
 
   const moreCards = e => {
     e.preventDefault()
-    console.log("clicked", featured.length)
     cards.visible === 3
       ? cardsVisible({ visible: featured.length, btn: "less" })
       : cardsVisible({ visible: 3, btn: "more" })
