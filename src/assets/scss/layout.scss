@@ -23,6 +23,9 @@ section {
 .heading-lg {
   margin: 0;
   font-size: clamp(40px, 8vw, 80px);
+  &::first-letter {
+    margin-left: -0.3rem;
+  }
 }
 .heading-med {
   margin: 0;
@@ -67,9 +70,13 @@ section {
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
+    .heading-section--number {
+      padding-bottom: 1rem;
+    }
     .rule {
       margin-top: 1rem;
       margin-left: 0px;
+      display: none;
     }
   }
 }

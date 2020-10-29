@@ -25,7 +25,7 @@
   }
   @media (max-width: 768px) {
     flex-direction: column;
-    margin: 175px 0px 0px 0px;
+    margin: 30px 0px 15px 0px;
     position: relative;
   }
   &.item-1 {
@@ -33,7 +33,7 @@
     @media (max-width: 768px) {
       width: 100%;
       flex-direction: column;
-      margin: 250px 0px 40px 0px;
+      // margin: 230px 0px 70px 0px;
     }
     .project-content {
       align-items: flex-start;
@@ -45,7 +45,7 @@
     align-items: flex-end;
     flex-direction: column;
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     color: $slate;
     &:hover {
       .project-image {
@@ -54,10 +54,9 @@
     }
     @media (max-width: 768px) {
       width: 100%;
-      margin-top: 30px;
       background-color: $navy;
-      // margin-top: -100px;
       align-items: flex-start;
+      height: auto;
     }
     span {
       font-size: $fz-sm;
@@ -69,8 +68,8 @@
   }
   .project-image {
     width: 40%;
-    height: 300px;
-    position: absolute;
+    min-height: 300px;
+    position: relative;
     a {
       width: 100%;
       height: 100%;
@@ -115,7 +114,7 @@
     }
     @media (max-width: 768px) {
       width: 100%;
-      height: 500px;
+      min-height: 175px;
       bottom: 0;
     }
   }
@@ -133,6 +132,7 @@
   }
   .project-ctas {
     margin-top: 1rem;
+    min-height: 60px;
     a {
       padding: 1rem;
       text-decoration: none;
@@ -210,6 +210,7 @@
   text-align: start;
   font-size: $fz-md;
   margin-bottom: 0.5rem;
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -217,7 +218,7 @@
     display: none;
   }
   .featured-mobile {
-    display: block;
+    display: none;
     opacity: 0;
   }
 }

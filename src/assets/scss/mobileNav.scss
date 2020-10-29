@@ -29,6 +29,7 @@
 
 .mobile-nav--tray {
   position: fixed;
+  overflow: hidden;
   top: 0;
   right: 0;
   width: fit-content;
