@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "../assets/scss/mobileNav.scss"
 
-import scrollTo from "gatsby-plugin-smoothscroll"
+import Logo from "./logo.js"
 
 import Fade from "react-reveal/Fade"
 
@@ -20,9 +20,8 @@ const MobileNav = props => {
     e.preventDefault()
     menuOpened(false)
   }
-  const handleNav = (e, target) => {
+  const handleNav = e => {
     e.preventDefault()
-    // scrollTo(`#${target}`)
     setTimeout(() => {
       menuOpened(false)
     }, 250)
@@ -49,7 +48,10 @@ const MobileNav = props => {
       {menu === true ? (
         <Fade right duration={500}>
           <div className={"mobile-nav--tray"}>
-            <div className={"nav-close"}>
+            <div className={"nav-top"}>
+              <AniLink className={"avatar"} paintDrip hex={"#e6e6e6"} to="/">
+                <Logo />
+              </AniLink>
               <div
                 className={"nav-close--icon"}
                 onClick={e => closeMenu(e)}
@@ -79,9 +81,9 @@ const MobileNav = props => {
                       hex={"#e6e6e6"}
                       to="/"
                       state={{ section: item }}
-                      onClick={e => handleNav(e, item)}
+                      onClick={e => handleNav(e)}
                     >
-                      <span>01.</span>
+                      <span>0{index + 1}.</span>
                       {item}
                     </AniLink>
                   </li>

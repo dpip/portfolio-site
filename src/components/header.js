@@ -47,16 +47,14 @@ const Header = props => {
             {navItems.map((item, index) => {
               return (
                 <li key={index}>
-                  <AniLink
-                    paintDrip
-                    hex={"#e6e6e6"}
-                    to="/"
-                    state={{ section: item }}
+                  <a
+                    role={"presentation"}
+                    rel={"noreferrer"}
                     onClick={() => scrollTo(`#${item}`)}
                   >
-                    <span className={"green"}>01.</span>
+                    <span className={"green"}>0{index + 1}.</span>
                     {item}
-                  </AniLink>
+                  </a>
                 </li>
               )
             })}
