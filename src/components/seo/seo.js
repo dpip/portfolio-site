@@ -98,7 +98,7 @@ function SEO({ description, lang, meta, image: metaImage, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: `Front-end development portfolio`,
+  description: `Front-end Dev`,
 }
 SEO.propTypes = {
   description: PropTypes.string,
