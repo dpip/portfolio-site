@@ -1,15 +1,3 @@
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** dpip, repo_name, twitter_handle, email
--->
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -29,23 +17,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/dpip/repo_name">
+  <a href="https://github.com/dpip/portfolio-site">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">YOUR_TITLE</h3>
+  <h3 align="center">Front-end Portfolio site</h3>
 
   <p align="center">
     YOUR_SHORT_DESCRIPTION
     <br />
-    <a href="https://github.com/dpip/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/dpip/portfolio-site"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/dpip/repo_name">View Demo</a>
+    <a href="https://github.com/dpip/portfolio-site">View Demo</a>
     ·
-    <a href="https://github.com/dpip/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/dpip/portfolio-site/issues">Report Bug</a>
     ·
-    <a href="https://github.com/dpip/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/dpip/portfolio-site/issues">Request Feature</a>
   </p>
 </p>
 
@@ -73,7 +61,7 @@
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`dpip`, `repo_name`, `twitter_handle`, `email`
+`dpip`, `portfolio-site`, `twitter_handle`, `dpip.nc@gmail.com`
 
 ### Built With
 
@@ -102,7 +90,7 @@ npm install npm@latest -g
 1. Clone the repo
 
 ```sh
-git clone https://github.com/dpip/repo_name.git
+git clone https://github.com/dpip/portfolio-site.git
 ```
 
 2. Install NPM packages
@@ -123,7 +111,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-See the [open issues](https://github.com/dpip/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/dpip/portfolio-site/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 
@@ -147,9 +135,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Daniel Pipkin - dpip.nc@gmail.com
 
-Project Link: [https://github.com/dpip/repo_name](https://github.com/dpip/repo_name)
+Project Link: [https://github.com/dpip/portfolio-site](https://github.com/dpip/portfolio-site)
 
 <!-- ACKNOWLEDGEMENTS -->
 
