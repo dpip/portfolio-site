@@ -36,7 +36,7 @@ const Header = props => {
   return (
     <header className={`header ${shadowStyle} ${hiddenStyle}`}>
       <div className={"inner"}>
-        <AniLink className={"avatar"} paintDrip hex={"#e6e6e6"} to="/">
+        <AniLink className={"avatar"} paintDrip hex={"#f26419"} to="/">
           <Fade>
             <Logo />
           </Fade>

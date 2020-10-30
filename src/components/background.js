@@ -22,19 +22,11 @@ export default props => (
             direction: "down",
             speed: 0.75,
           },
-          color: "#64ffda",
-        },
-        interactivity: {
-          events: {
-            onhover: {
-              enable: true,
-              mode: "repulse",
-            },
-          },
+          color: "#f26419",
         },
         line_linked: {
           enable: true,
-          opacity: 0.02,
+          opacity: 0,
         },
         retina_detect: true,
       }}

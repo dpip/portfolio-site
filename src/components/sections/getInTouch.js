@@ -20,7 +20,7 @@ export default props => (
     <AniLink
       className="btn btn-contact"
       paintDrip
-      hex={"#e6e6e6"}
+      hex={"#f26419"}
       to="/contact"
     >
       Contact

@@ -54,7 +54,8 @@
     }
     @media (max-width: 768px) {
       width: 100%;
-      background-color: $navy;
+      background-color: $green;
+      color: $navy;
       align-items: flex-start;
       height: auto;
     }
@@ -73,12 +74,13 @@
     a {
       width: 100%;
       height: 100%;
-      background-color: $green;
+      // background-color: $green;
       border-radius: $border-radius;
       vertical-align: middle;
       position: absolute;
       top: 0;
       left: 0;
+      border: 2px solid $green;
       &:hover,
       &:focus {
         background: transparent;
@@ -100,7 +102,7 @@
       bottom: 0;
       z-index: 200;
       transition: $transition;
-      background-color: $navy;
+      // background-color: #0a192f;
       mix-blend-mode: screen;
     }
     img {
@@ -108,7 +110,7 @@
       height: 100%;
       border-radius: $border-radius;
       mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1) brightness(90%);
+      // filter: grayscale(100%) contrast(1) brightness(90%);
       object-fit: cover;
       object-position: center top;
     }
@@ -146,7 +148,7 @@
         margin-right: 2rem;
       }
       &:hover {
-        color: $navy;
+        color: #fff;
         background-color: $green;
       }
     }
