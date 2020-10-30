@@ -5,11 +5,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   // z-index: 999;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100% !important;
   width: 100vw;
   background-color: rgba(40, 41, 49, 0.85);
   overflow: hidden;
@@ -19,7 +19,7 @@
     background-color: $navy;
     padding: 3rem;
     border-radius: $border-radius;
-    border: 2px solid $green;
+    border: 1px solid $green;
     // z-index: 150;
     margin: 50px 20px 0px 20px;
     position: relative;
