@@ -18,7 +18,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/dpip/portfolio-site">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="/static/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">👾 Front-end Portfolio site 👾</h3>
