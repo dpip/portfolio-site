@@ -29,19 +29,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    h3 {
-      color: $navy;
-      transition: $transition;
-    }
     &:hover {
       transform: translateY(-2.5px);
       background-color: $navy;
       border: 2px solid $green;
       border-radius: 4px;
-      h3,
-      .card-icon-container {
-        color: $green;
-      }
     }
     .card-content {
       padding: 1rem;
@@ -71,11 +63,10 @@
 
 .card-icon-container {
   width: 100%;
-  color: $navy;
+  color: $green;
   font-size: $fz-xl;
   padding: 12px 0px 24px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: $transition;
 }

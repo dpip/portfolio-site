@@ -10,7 +10,7 @@ export default props => (
         <AniLink
           className={"avatar avatar__small"}
           paintDrip
-          hex={"#f26419"}
+          hex={"#e6f1ff"}
           to="/"
         >
           <img

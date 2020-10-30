@@ -9,24 +9,24 @@
   // z-index: 999;
   top: 0;
   left: 0;
-  height: 100% !important;
+  height: 100%;
   width: 100vw;
   background-color: rgba(40, 41, 49, 0.85);
   overflow: hidden;
+  overflow-y: hidden; // hide vertical
+  overflow-x: hidden; // hide horizontal
   .modal__content {
     max-width: 600px;
     margin: 0px 32px;
     background-color: $navy;
     padding: 3rem;
     border-radius: $border-radius;
-    border: 1px solid $green;
+    border: 2px solid $green;
     // z-index: 150;
     margin: 50px 20px 0px 20px;
     position: relative;
-    overflow: hidden;
-    // overflow-y: hidden; // hide vertical
-    // overflow-x: hidden; // hide horizontal
-    // posititon: relative;
+    overflow-y: hidden; // hide vertical
+    overflow-x: hidden; // hide horizontal
     @media (max-width: 780px) {
       padding: 1.5rem 1rem;
       .modal__content-message {

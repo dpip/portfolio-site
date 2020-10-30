@@ -70,7 +70,7 @@ const Modal = props => {
                 <AniLink
                   className="btn"
                   paintDrip
-                  hex={"#f26419"}
+                  hex={"#64ffda"}
                   to={props.to}
                 >
                   {props.btnText}

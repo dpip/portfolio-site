@@ -31,7 +31,7 @@ export default props => (
           <AniLink
             className={"404-cta btn btn-green"}
             paintDrip
-            hex={"#f26419"}
+            hex={"#64ffda"}
             to="/"
           >
             C'mon back

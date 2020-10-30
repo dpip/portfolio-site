@@ -21,7 +21,6 @@
   @include transition(0.3s cubic-bezier(0.5, 0, 0.5, 1));
   @include flex-center();
   &:hover {
-    background-color: $green;
-    color: #fff;
+    background-color: $navy-light;
   }
 }
