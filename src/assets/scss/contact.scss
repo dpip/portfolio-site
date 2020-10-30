@@ -57,8 +57,11 @@ form {
 
 #message {
   min-width: 100%;
-  min-height: 25rem;
+  min-height: 20rem;
   margin-top: 1rem !important;
+  @media (max-width: 768px) {
+    min-height: 10rem;
+  }
 }
 
 input[type="text"],
@@ -98,7 +101,7 @@ textarea {
 }
 input,
 textarea {
-  font-size: 17pt;
+  font-size: $fz-lg;
   font-weight: 300;
   letter-spacing: 0.025em;
   line-height: 1.65;

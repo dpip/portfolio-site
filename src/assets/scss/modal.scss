@@ -27,6 +27,7 @@
     position: relative;
     overflow-y: hidden; // hide vertical
     overflow-x: hidden; // hide horizontal
+    posititon: relative;
     @media (max-width: 780px) {
       padding: 1.5rem 1rem;
       .modal__content-message {
