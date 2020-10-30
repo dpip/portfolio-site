@@ -21,10 +21,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Front-end Portfolio site</h3>
+  <h3 align="center">👾 Front-end Portfolio site 👾</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    A personal website created to flex my react muscles, have some fun, and show off my work.
     <br />
     <a href="https://github.com/dpip/portfolio-site"><strong>Explore the docs »</strong></a>
     <br />
@@ -65,9 +65,11 @@ Here's a blank template to get started:
 
 ### Built With
 
-- []()
-- []()
-- []()
+- [Gatsby]()
+- [React Particles]()
+- [React Reveal]()
+- [(S)CSS]()
+- [Formspree](https://formspree.io/)
 
 <!-- GETTING STARTED -->
 
@@ -77,12 +79,16 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+An installation of [Node.js]()
 
-- npm
+- npm or yarn
 
 ```sh
 npm install npm@latest -g
+```
+
+```sh
+yarn update
 ```
 
 ### Installation
@@ -93,37 +99,33 @@ npm install npm@latest -g
 git clone https://github.com/dpip/portfolio-site.git
 ```
 
-2. Install NPM packages
+2. Install packages with NPM or Yarn
 
 ```sh
 npm install
 ```
 
-<!-- USAGE EXAMPLES -->
+```sh
+yarn install
+```
 
-## Usage
+3. Run the project
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+```sh
+npm run start
+```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+```sh
+yarn start
+```
+
+Check out the [Gatsby docs]() if you run into any issues or need anymore information about the base environment.
 
 <!-- ROADMAP -->
 
 ## Roadmap
 
-See the [open issues](https://github.com/dpip/portfolio-site/issues) for a list of proposed features (and known issues).
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+No issues that I'm aware of but you can view the [open issues](https://github.com/dpip/portfolio-site/issues) for a list of proposed features (and known issues) if anything comes up.
 
 <!-- LICENSE -->
 
@@ -143,15 +145,15 @@ Project Link: [https://github.com/dpip/portfolio-site](https://github.com/dpip/p
 
 ## Acknowledgements
 
-- []()
-- []()
-- []()
+- [Brittany Chiang](https://brittanychiang.com/) - I definitely used her portfolio for inspiration. While i didn't use her code I did rely on her base theme design, used several variable from her main CSS, and gained some more insight into what a well reactr structured project should look/feel like.
+- [React Particles](https://github.com/Wufe/react-particles-js#readme) - What a neat library. It's easy to use and makes me look way better at this dev thing than I really am... 😅.
+- [Formspree](https://formspree.io/) - While I want to eventually build a this process from scratch, this service gave me the tools to get a contact fortm up and going in a couple of hours +plus+ the example documentation is straight forward and thorough.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/dpip/repo.svg?style=flat-square
-[contributors-url]: https://github.com/dpip/repo/graphs/contributors
+[contributors-url]: https://github.com/dpip/portfolio-site/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/dpip/repo.svg?style=flat-square
 [forks-url]: https://github.com/dpip/repo/network/members
 [stars-shield]: https://img.shields.io/github/stars/dpip/repo.svg?style=flat-square
