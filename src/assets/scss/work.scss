@@ -54,7 +54,7 @@
     }
     @media (max-width: 768px) {
       width: 100%;
-      background-color: $green;
+      background-color: $navy-light;
       color: $navy;
       align-items: flex-start;
       height: auto;
@@ -195,7 +195,8 @@
     p {
       font-size: $fz-sm;
       padding: 0.5rem;
-      background-color: $navy;
+      background-color: $green;
+      color: $navy;
     }
     @media (max-width: 768px) {
       width: 100%;
