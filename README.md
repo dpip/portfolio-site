@@ -55,16 +55,16 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project
+<!-- ## About The Project -->
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/dpip/portfolio-site/blob/dev/static/favicon.ico)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://github.com/dpip/portfolio-site/blob/dev/static/favicon.ico) -->
 
 ### Built With
 
-- [Gatsby]()
-- [React Particles]()
-- [React Reveal]()
-- [(S)CSS]()
+- [Gatsby](https://www.gatsbyjs.com/)
+- [React Particles](https://github.com/Wufe/react-particles-js#readme)
+- [React Reveal](https://github.com/rnosov/react-reveal)
+- [(S)CSS](https://sass-lang.com/)
 - [Formspree](https://formspree.io/)
 
 <!-- GETTING STARTED -->
@@ -75,7 +75,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-An installation of [Node.js]()
+An installation of [Node.js](https://nodejs.org/en/)
 
 - npm or yarn
 
@@ -115,7 +115,7 @@ npm run start
 yarn start
 ```
 
-Check out the [Gatsby docs]() if you run into any issues or need anymore information about the base environment.
+Check out the [Gatsby docs](https://www.gatsbyjs.com/docs/) if you run into any issues or need anymore information about the base environment.
 
 <!-- ROADMAP -->
 
