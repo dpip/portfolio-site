@@ -34,15 +34,11 @@ module.exports = {
         display: "swap",
       },
     },
-    {
-      resolve: `gatsby-plugin-material-ui`,
-    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-modal-routing`,
-    `gatsby-plugin-material-ui`,
     `gatsby-plugin-fontawesome-css`,
   ],
 }
