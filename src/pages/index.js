@@ -7,6 +7,7 @@ import "../assets/scss/main.scss"
 import content from "../data/content.json"
 
 import Layout from "../components/layout.js"
+import SEO from "../components/seo/seo.js"
 import Intro from "../components/sections/intro.js"
 import About from "../components/sections/about.js"
 import Work from "../components/sections/work.js"
@@ -31,6 +32,7 @@ const Home = props => {
   return (
     <>
       <Layout type={"index"} nav={nav}>
+        <SEO title="Daniel Pipkin - home" />
         <section>
           <Intro content={content.intro} />
           <About content={content.about} />

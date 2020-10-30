@@ -8,8 +8,10 @@ module.exports = {
   /* Site config here */
   siteMetadata: {
     title: `Daniel Pipkin`,
-    siteUrl: `https://www.dpip.dev`,
     description: `Portfolio created by Daniel Pipkin to showcase front-end development`,
+    author: `Daniel Pipkin`,
+    keywords: `daniel pipkin raleigh north carolina front end developer dev software engineer javascript react gatsby html css sass code`,
+    siteUrl: `https://www.dpip.dev`,
   },
   plugins: [
     {
@@ -35,6 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-material-ui`,
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-transition-link`,

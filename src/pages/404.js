@@ -3,12 +3,14 @@ import "../assets/scss/404.scss"
 import "../assets/scss/main.scss"
 
 import Layout from "../components/layout.js"
+import SEO from "../components/seo/seo.js"
 
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Fade from "react-reveal/Fade"
 
 export default props => (
   <Layout>
+    <SEO title="Daniel Pipkin - 404" />
     <section>
       <Fade bottom duration={500} cascade delay={500}>
         <div className={"container container--404"}>

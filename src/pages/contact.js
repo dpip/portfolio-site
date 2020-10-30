@@ -5,6 +5,7 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 import "../assets/scss/main.scss"
 import "../assets/scss/contact.scss"
 import Layout from "../components/layout.js"
+import SEO from "../components/seo/seo.js"
 import Form from "../components/form.js"
 
 const Contact = props => {
@@ -13,6 +14,7 @@ const Contact = props => {
   }, 250)
   return (
     <Layout type={"contact"}>
+      <SEO title="Daniel Pipkin - contact" />
       <section id="contact-form">
         <div className={"container container--form"}>
           <h1 className={"hello green"}>Let's connect!</h1>
