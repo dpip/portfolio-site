@@ -22,7 +22,7 @@ export default props => (
             direction: "down",
             speed: 0.75,
           },
-          color: "#64ffda",
+          color: "#e6f1ff",
         },
         interactivity: {
           events: {
