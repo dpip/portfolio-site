@@ -7,18 +7,18 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/dpip/portfolio-site">
-    <img src="/static/favicon.ico" alt="Logo" width="80" height="80">
+    <img src="/static/favicon.ico" alt="Logo" width="160" height="160">
   </a>
 
   <h3 align="center">👾 Front-end Portfolio site 👾</h3>
@@ -26,14 +26,13 @@
   <p align="center">
     A personal website created to flex my react muscles, have some fun, and show off my work.
     <br />
+    <br />
     <a href="https://github.com/dpip/portfolio-site"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/dpip/portfolio-site">View Demo</a>
+    <a href="https://www.dpip.dev/">View my site!</a>
     ·
     <a href="https://github.com/dpip/portfolio-site/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/dpip/portfolio-site/issues">Request Feature</a>
   </p>
 </p>
 
