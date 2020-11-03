@@ -49,7 +49,7 @@ const MobileNav = props => {
         <Fade right duration={500}>
           <div className={"mobile-nav--tray"}>
             <div className={"nav-top"}>
-              <AniLink className={"avatar"} paintDrip hex={"#64ffda"} to="/">
+              <AniLink className={"avatar"} paintDrip hex={"#f26419"} to="/">
                 <Logo />
               </AniLink>
               <div
@@ -78,7 +78,7 @@ const MobileNav = props => {
                   <li key={index}>
                     <AniLink
                       paintDrip
-                      hex={"#64ffda"}
+                      hex={"#f26419"}
                       to="/"
                       state={{ section: item }}
                       onClick={e => handleNav(e)}
