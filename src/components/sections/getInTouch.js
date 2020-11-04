@@ -3,8 +3,6 @@ import "../../assets/scss/contact.scss"
 
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-import Fade from "react-reveal/Fade"
-
 export default props => (
   <div id={"contact"} className={"container container--get-in-touch"}>
     <h2 className={"heading-section"} style={{ marginTop: "2rem" }}>

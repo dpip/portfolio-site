@@ -31,13 +31,6 @@
     "bodyTitle": "Things I've built",
     "projects": [
       {
-        "link": "https://jolly-pare-ad4269.netlify.app/",
-        "title": "Hill generator",
-        "description": "Poking fun at ther structure of marketing intoductions/call to actions dynamically.",
-        "cta": "Visit",
-        "tech": ["React,", "Gatsby,", "SASS"]
-      },
-      {
         "link": "https://centerlinebeta.net/9730/dist",
         "title": "IBM Sterling OM benefits calculator",
         "description": "Benefits calculator estimating how IBM Sterling Order Management can help your bottom line using Gatsby and Carbon Design components.",
@@ -70,6 +63,13 @@
       "link": ""
     },
     "featuredExp": [
+      {
+        "expTitle": "Hill generator",
+        "expDescription": "Poking fun at digital marketing content structures dynamically.",
+        "expURL": "https://codepen.io/dpip/pen/rJrQRR",
+        "expType": "site",
+        "expTech": ["React,", "Gatsby,", "SASS"]
+      },
       {
         "expTitle": "Turbine loader",
         "expDescription": "Loading animation used for an IBM Think event interactive.",

@@ -42,6 +42,7 @@ const Experimental = props => {
                     description={exp.expDescription}
                     url={exp.expURL}
                     tech={exp.expTech}
+                    type={exp.expType}
                   />
                 )
               })}

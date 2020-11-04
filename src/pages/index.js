@@ -16,7 +16,7 @@ import GetInTouch from "../components/sections/getInTouch.js"
 import LoadScreen from "../components/loadScreen.js"
 
 const Home = props => {
-  const [nav, toggleNav] = useState(false)
+  const [nav] = useState(false)
 
   const toSection = () => {
     let sectionState = props.location.state

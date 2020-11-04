@@ -118,10 +118,10 @@ textarea:focus {
   padding-top: 90px;
   // @include flex-center();
   flex-direction: column;
-  max-width: 400px !important;
-  word-break: break-all;
+  max-width: 550px !important;
   @media (max-width: 768px) {
     align-items: flex-start;
+    max-width: 100% !important;
   }
 }
 
