@@ -17,7 +17,7 @@ export default props => (
         className="btn btn-contact"
         paintDrip
         style={{ marginTop: "50px" }}
-        hex={"#f26419"}
+        hex={"#e6f1ff"}
         to="/contact/"
       >
         Get in touch

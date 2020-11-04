@@ -12,13 +12,13 @@ export default props => (
     </h2>
     <p>
       I'm currently looking for new opportunities and my inbox is always open!
-      Whether you have a question or just want to say hi, I'll try my best to
-      get back to you!
+      Whether you have a question or just want to say hi, I'll do my best to get
+      back to you asap!
     </p>
     <AniLink
       className="btn btn-contact"
       paintDrip
-      hex={"#f26419"}
+      hex={"#e6f1ff"}
       to="/contact"
     >
       Contact
