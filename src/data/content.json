@@ -66,7 +66,7 @@
       {
         "expTitle": "Hill generator",
         "expDescription": "Poking fun at digital marketing content structures dynamically.",
-        "expURL": "https://codepen.io/dpip/pen/rJrQRR",
+        "expURL": "https://jolly-pare-ad4269.netlify.app/",
         "expType": "site",
         "expTech": ["React,", "Gatsby,", "SASS"]
       },
@@ -78,18 +78,18 @@
         "expTech": ["HTML5,", "CSS3,", "SASS"]
       },
       {
-        "expTitle": "Fancy button border",
-        "expDescription": "Animation tracing the border of a button component.",
-        "expURL": "https://codepen.io/dpip/pen/WKLbjW",
-        "expType": "codepen",
-        "expTech": ["HTML5,", "CSS3,", "SASS"]
-      },
-      {
         "expTitle": "Flex accent underline",
         "expDescription": "Animation using flexbox to draw a line under text",
         "expURL": "https://codepen.io/dpip/pen/VwwrLZj",
         "expType": "codepen",
         "expTech": ["HTML5,", "SASS,"]
+      },
+      {
+        "expTitle": "Fancy button border",
+        "expDescription": "Animation tracing the border of a button component.",
+        "expURL": "https://codepen.io/dpip/pen/WKLbjW",
+        "expType": "codepen",
+        "expTech": ["HTML5,", "CSS3,", "SASS"]
       },
       {
         "expTitle": "Page load concept",

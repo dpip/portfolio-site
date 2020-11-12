@@ -12,6 +12,7 @@ module.exports = {
     author: `Daniel Pipkin`,
     keywords: `daniel pipkin raleigh north carolina front end developer dev software engineer javascript react gatsby html css sass code`,
     siteUrl: `https://www.dpip.dev`,
+    image: "./src/assets/images/dpip.jpeg",
   },
   plugins: [
     {
