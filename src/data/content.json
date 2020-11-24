@@ -64,6 +64,20 @@
     },
     "featuredExp": [
       {
+        "expTitle": "Form Progression",
+        "expDescription": "48 hour code test created from a verbal description and a json file.",
+        "expURL": "https://codesandbox.io/s/lively-lake-83rly",
+        "expType": "site",
+        "expTech": ["React,", "useEffect", "CSS3"]
+      },
+      {
+        "expTitle": "Tic Tac Toe",
+        "expDescription": "24 hour code test completed with React and front-end fundamentals.",
+        "expURL": "https://codesandbox.io/s/funny-kilby-ms9kn?file=/src/App.js",
+        "expType": "site",
+        "expTech": ["React,", "CSS3"]
+      },
+      {
         "expTitle": "Hill generator",
         "expDescription": "Poking fun at digital marketing content structures dynamically.",
         "expURL": "https://jolly-pare-ad4269.netlify.app/",
