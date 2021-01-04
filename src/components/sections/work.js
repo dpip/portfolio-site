@@ -7,10 +7,12 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 import prodOne from "../../assets/images/sterling.png"
-import prodTwo from "../../assets/images/ping.png"
-import prodThree from "../../assets/images/anniversary.png"
+import prodTwo from "../../assets/images/greenchair.png"
+import prodThree from "../../assets/images/ping.png"
+import prodFour from "../../assets/images/anniversary.png"
 
-const projectSRC = [prodOne, prodTwo, prodThree]
+
+const projectSRC = [prodOne, prodTwo, prodThree, prodFour]
 
 export default props => (
   <div id={"work"} className={"container container-work"}>

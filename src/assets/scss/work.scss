@@ -39,6 +39,17 @@
       align-items: flex-start;
     }
   }
+  &.item-3 {
+    flex-direction: row-reverse;
+    @media (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
+      // margin: 230px 0px 70px 0px;
+    }
+    .project-content {
+      align-items: flex-start;
+    }
+  }
   .project-content {
     display: flex;
     justify-content: flex-start;

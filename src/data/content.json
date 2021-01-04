@@ -38,6 +38,14 @@
         "tech": ["React,", "Carbon Components,", "Carbon Design System,", "SASS"]
       },
       {
+        "link": "https://thegreenchair.org/",
+        "title": "The Green Chair Project",
+        "description": "Custom Wordpress themes and CMS integrations for a non-profit that provides furnishings for those in need in the raleigh area.",
+        "cta": "View website",
+        "github": "https://github.com/dpip/ping-high-velocity-assessment-tool",
+        "tech": ["JavaScript,", "JQuery,", "Wordpress,", "PHP,", "SASS"]
+      },
+      {
         "link": "https://centerlinebeta.net/9329/build/",
         "title": "Ping Identity Assessment",
         "description": "Cross-currency assessment identifying security threats using JQuery and SASS.",
