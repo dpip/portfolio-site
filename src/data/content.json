@@ -3,20 +3,22 @@
     "hello": "Hey, my name is",
     "name": "Daniel Pipkin.",
     "profession": "I build for the web.",
-    "main": "I'm a software developer living in Raleigh, NC specializing in building beautiful websites and turning complex problems into creative and intuitive solutions."
+    "main": "Based in Raleigh, NC, I have a knack for developing beautiful applications and transforming complex challenges into innovative, user-centric solutions that enhance both functionality and usability."
   },
   "about": {
     "navTitle": "About",
     "bodyTitle": "About Me",
     "body": [
-      "I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.",
+      "A roommate's Arduino project sparked a career shift for me, leading from 11 years in fine dining to a software bootcamp in 2017, and I haven't looked back since. There's a saying in hospitality: 'The customer is always right.' Whether in hospitality or engineering, I've always thrived on feedback and criticism, striving to provide the best user experience (or user interface!) possible, no matter how busy things get.",
       "Here are the main technologies I've been working with recently:"
     ],
     "tech": [
       "JavaScript (ES6+)",
       "React",
+      "Vue",
       "Node.js",
-      "HTML & (S)CSS",
+      "HTML5",
+      "(S)CSS/Tailwinds",
       "Electron",
       "MongoDB"
     ],
@@ -31,35 +33,36 @@
     "bodyTitle": "Things I've built",
     "projects": [
       {
-        "link": "https://centerlinebeta.net/9730/dist",
-        "title": "IBM Sterling OM benefits calculator",
-        "description": "Benefits calculator estimating how IBM Sterling Order Management can help your bottom line using Gatsby and Carbon Design components.",
-        "cta": "View calculator",
-        "tech": ["React,", "Carbon Components,", "Carbon Design System,", "SASS"]
+        "link": "https://manyfacesinitiative.com/",
+        "title": "The Many Faces Initiative",
+        "type": "Freelance Project",
+        "description": "Sanity.io CMS from scratch with Next.js for a non-profit providing a paid, ten-week, brewery internship to people of color in the brewing industry. (Solo) ",
+        "cta": "View website",
+        "tech": ["React,", "Next.js,", "Stripe payment,", "SCSS"]
+      },
+      {
+        "link": "https://manyfacesinitiative.com/",
+        "title": "Cloaked",
+        "type": "Front-End Engineer",
+        "description": "Vue 3, Pinia, and homeade encryption utyilized to create a new desktop dashboard displaying credit card, phone, and email aliases (Team)",
+        "cta": "Visit Cloaked",
+        "tech": ["Vue 3,", "Pinia,", "Encryption,", "Tailwinds"]
       },
       {
         "link": "https://thegreenchair.org/",
         "title": "The Green Chair Project",
-        "description": "Custom Wordpress themes and CMS integrations for a non-profit that provides furnishings for those in need in the raleigh area.",
+        "type": "Front-End Engineer",
+        "description": "Custom Wordpress themes and CMS integrations for a non-profit that provides furnishings for those in need in the raleigh area. (Team)",
         "cta": "View website",
-        "github": "https://github.com/dpip/ping-high-velocity-assessment-tool",
-        "tech": ["JavaScript,", "JQuery,", "Wordpress,", "PHP,", "SASS"]
+        "tech": ["JavaScript,", "JQuery,", "Wordpress,", "PHP,", "SCSS"]
       },
       {
         "link": "https://centerlinebeta.net/9329/build/",
         "title": "Ping Identity Assessment",
-        "description": "Cross-currency assessment identifying security threats using JQuery and SASS.",
+        "type": "Front-End Engineer",
+        "description": "Cross-currency assessment identifying security threats using JQuery and SASS. (Solo)",
         "cta": "View project",
-        "github": "https://github.com/dpip/ping-high-velocity-assessment-tool",
-        "tech": ["JavaScript,", "JQuery,", "SASS,", "popper.js"]
-      },
-      {
-        "link": "https://centerlinebeta.net/7745/public/",
-        "title": "IBM i 30th Anniversary",
-        "description": "Dynamic Microsite celebrating 30 years of innovation using JQuery, HandleBars, IBMv19, and SASS.",
-        "cta": "View project",
-        "github": "https://github.com/dpip/ibmi-anniversary-microsite",
-        "tech": ["JavaScript,", "JQuery,", "handlebars.js,", "SASS,", "IBM NorthStar V/19"]
+        "tech": ["JavaScript,", "JQuery,", "SCSS,", "popper.js"]
       }
     ]
   },

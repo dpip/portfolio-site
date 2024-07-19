@@ -6,11 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
-import prodOne from "../../assets/images/sterling.png"
-import prodTwo from "../../assets/images/greenchair.png"
-import prodThree from "../../assets/images/ping.png"
-import prodFour from "../../assets/images/anniversary.png"
-
+import prodOne from "../../assets/images/many-faces.png"
+import prodTwo from "../../assets/images/cloaked.png"
+import prodThree from "../../assets/images/greenchair.png"
+import prodFour from "../../assets/images/ping.png"
 
 const projectSRC = [prodOne, prodTwo, prodThree, prodFour]
 
@@ -24,11 +23,11 @@ export default props => (
       </h2>
       {props.content.projects.map((project, index) => (
         <div className={`work--item item-${index}`} key={index}>
-          <h2 className={"green featured-mobile"}>Featured Project</h2>
+          <h2 className={"green featured-mobile"}>{project.type}</h2>
           <div className={"project-image"}>
             <a href={project.link} target={"_blank"} rel={"noreferrer"}>
               <img
-                alt="screenshot of featured project"
+                alt="screenshot of {project.type}"
                 src={projectSRC[index]}
                 description={""}
               />
@@ -36,7 +35,7 @@ export default props => (
           </div>
 
           <div className={"project-content"}>
-            <span className={"green project-featured"}>Featured Project</span>
+            <span className={"green project-featured"}>{project.type}</span>
             <h4>{project.title}</h4>
             <div className={"project-description"}>{project.description}</div>
             <div className={"project-tech"}>
