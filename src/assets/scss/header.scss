@@ -42,14 +42,30 @@ header {
     transition: $transition;
     text-transform: capitalize;
     cursor: pointer;
-    span {
-      margin-right: 0.5rem;
-      font-family: $font-mono;
+    display: flex;
+    flex-direction: column;
+    &:hover {
+        .underline {
+          background: $green;
+          width: 100%;
+        }
+        a {
+          color: $green;
+        }
+      }
+    .underline {
+      width: 0%;
+      padding: 1px;
+      background: inherit;
+      transition: all 0.25s ease-in-out;
+      transition-timing-function: cubic-bezier(0.2, 0, 0.38, 0.9);
     }
     a {
       color: $slate;
-      &:hover {
-        color: $green;
+      display: flex;
+      span {
+        margin-right: 0.5rem;
+        font-family: $font-mono;
       }
     }
   }

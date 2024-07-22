@@ -55,6 +55,7 @@ const Header = props => {
                     <span className={"green"}>0{index + 1}.</span>
                     {item}
                   </a>
+                  <span className={"underline"} />
                 </li>
               )
             })}
